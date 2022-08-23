@@ -1,0 +1,51 @@
+.productsWrapper {
+  height: 600px;
+  width: 75%;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 40px;
+  display: flex;
+  gap: 2%;
+}
+.productsWrapper .leftChild {
+  height: 100%;
+  width: 25%;
+  border: 1px solid red;
+}
+.productsWrapper .rightChild {
+  height: 100%;
+  width: 73%;
+  border: 1px solid red;
+}
+.productsWrapper .leftChild h1,
+.productsWrapper .rightChild h1 {
+  font-size: 26px;
+  color: #4f585e;
+  letter-spacing: 0.5px;
+}
+.productsWrapper .leftChild .categoryDiv p {
+  color: #4f585e;
+  font-weight: 800;
+  letter-spacing: .5px;
+}
+.radioInputBox{
+    border: 1px solid blue;
+    width: 80%;
+    height: 30px;
+    font-size: 14px;
+    color: #4f585e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .5px;
+    cursor: pointer;
+}
+.radioInputBox input{
+    height: 17px;
+    width: 17px;
+    background: rgb(16,132,126);
+}
+/* input[type='radio']:checked::after{
+    background: rgb(16,132,126);
+    content: '';
+} */
