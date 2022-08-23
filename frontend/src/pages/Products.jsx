@@ -3,6 +3,7 @@ import styles from "../styles/products.module.css";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { ProductCard } from "../Component/ProductCard";
 
 export const Products = () => {
   const [age, setAge] = React.useState("");
@@ -103,7 +104,12 @@ export const Products = () => {
             </FormControl>
           </div>
         </div>
-        <div></div>
+        <div>
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+        </div>
       </div>
     </div>
   );

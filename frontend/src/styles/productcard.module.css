@@ -1,0 +1,29 @@
+.productCardParent {
+  border: 1px solid teal;
+}
+.productCardParent .imgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 15px 0px 0px 0px;
+}
+.productCardParent .imgDiv img {
+  height: 100%;
+  width: 50%;
+}
+.productCardParent div+p{
+    font-size: 16px;
+    color: #4f585e;
+    font-weight: 900;
+}
+.productCardParent .cutoffPrice{
+    color: #8897A2;
+    font-size: 14px;
+    margin-top: -3%;
+    margin-bottom: -7%;
+}
+.productCardParent .newPrice{
+    color: #4f585e;
+    font-weight: 600;
+}
