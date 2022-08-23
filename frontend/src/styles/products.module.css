@@ -1,5 +1,5 @@
 .productsWrapper {
-  height: 600px;
+  height: auto;
   width: 75%;
   margin: auto;
   border: 1px solid black;
@@ -23,29 +23,66 @@
   color: #4f585e;
   letter-spacing: 0.5px;
 }
-.productsWrapper .leftChild .categoryDiv p {
+.productsWrapper .leftChild .categoryDiv p,
+.subCategoryDiv p,
+.pricesFilterDiv p {
   color: #4f585e;
   font-weight: 800;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
-.radioInputBox{
-    border: 1px solid blue;
-    width: 80%;
-    height: 30px;
-    font-size: 14px;
-    color: #4f585e;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    letter-spacing: .5px;
-    cursor: pointer;
+.categoryDiv,
+.subCategoryDiv,
+.pricesFilterDiv {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.radioInputBox input{
-    height: 17px;
-    width: 17px;
-    background: rgb(16,132,126);
+.radioInputBox {
+  /* border: 1px solid blue; */
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  color: #4f585e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+.radioInputBox input {
+  height: 17px;
+  width: 17px;
+  margin-top: 0px;
+  background: rgb(16, 132, 126);
+  cursor: pointer;
 }
 /* input[type='radio']:checked::after{
     background: rgb(16,132,126);
     content: '';
 } */
+.productsWrapper .leftChild h4 {
+  color: #10847e;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* the right child */
+
+.productsWrapper .rightChild >div:first-child{
+    display: flex;
+    border: 1px solid blue;
+    align-items: center;
+    justify-content: space-between;
+}
+.productsWrapper .rightChild >div:first-child h1+div{
+    /* border: 1px solid blue; */
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productsWrapper .rightChild >div:first-child h1+div>span{
+    font-size: 14px;
+    color: #4f585e;
+}
