@@ -1,5 +1,5 @@
 import React from "react";
-import { Products } from "../pages/Products";
+import { Products } from "../Component/Products/Products";
 import { Routes, Route } from "react-router-dom";
 
 export const AllRoutes = () => {

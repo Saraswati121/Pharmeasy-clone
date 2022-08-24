@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import styles from "../styles/productcard.module.css";
+import styles from "./productcard.module.css";
 
 export const ProductCard = () => {
   const [discount, setDiscount] = useState("");
