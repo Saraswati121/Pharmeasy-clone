@@ -1,0 +1,151 @@
+.cartWrapper {
+  width: 75%;
+  margin: auto;
+  /* height: 600px; */
+  /* border: 1px solid black; */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+.cartTopBox {
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.cartTopBox h1 {
+  color: #4f585e;
+  font-size: 26px;
+  font-weight: 900;
+}
+.cartTopBox > div:first-child {
+  width: 60%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.cartTopBox > div:last-child {
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  margin-left: 5%;
+}
+.cartSearchBox {
+  width: 90%;
+  /* height: 60%; */
+  border: 1px solid teal;
+  background: rgb(16, 132, 126);
+  border-radius: 5px;
+  padding: 20px;
+}
+.cartSearchBox > div:first-child {
+  /* border: 2px solid white; */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4%;
+}
+.cartSearchBox span {
+  font-size: 12px;
+  width: 33%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.cartSearchBox span > img {
+  /* margin-left: 10%; */
+  margin-right: 5%;
+}
+.cartSearchBox h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 25px;
+}
+.cartSearchBox input {
+  width: 100%;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.cartTopBox > div:last-child h1 {
+  font-size: 24px;
+  color: #8897a2;
+  /* width: 40%; */
+  padding: 20px;
+  margin-top: 20%;
+}
+.cartTopBox > div:last-child img{
+    margin-top: 60%;
+    margin-left: -40%;
+}
+
+/* safety information */
+
+.cartInfoBox{
+    width: 55%;
+    height: 300px;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.cartInfoBox>div{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.cartInfoBox h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: #4f585e;
+}
+.cartInfoBox p{
+    color: #8897a2;
+}
+
+/* the app store download box */
+
+.appStoreBox{
+    width: 75%;
+    /* border: 1px solid black; */
+    height: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    display: flex;
+    gap: 8%;
+}
+.appStoreBox img{
+    height: 400px;
+}
+.appStoreBox>div{
+    width: 40%;
+    /* border: 1px solid red; */
+    height: 200px;
+}
+.appStoreBox>div p{
+    color: #4f585e;
+    font-size: 19px;
+}
+.appStoreBox>div>div{
+    display: flex;
+    /* border: 1px solid blue; */
+    height: 80px;
+    width: 100%;
+    gap: 6%;
+}
+.appStoreBox>div>div>div{
+    width: 35%;
+    height: 50px;
+    background-color: rgb(87,96,102);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    padding-left: 3%;
+}
