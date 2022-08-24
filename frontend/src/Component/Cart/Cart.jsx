@@ -3,12 +3,21 @@ import React from "react";
 import styles from "./cart.module.css";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple } from "react-icons/ai";
+import { SingleCartCard } from "../SingleCartCard/SingleCartCard";
 
 export const Cart = () => {
   return (
     <>
     <div className={styles.cartWithItems}>
-      <div className={styles.singleCartItem}></div>
+      <div className={styles.singleCartItem}>
+        <div>
+          <h1>1 Item in Cart</h1>
+          <p>Prices are indicative</p>
+        </div>
+        <div>
+          <SingleCartCard/>
+        </div>
+      </div>
       <div className={styles.cartBilling}></div>
     </div>
       <div
