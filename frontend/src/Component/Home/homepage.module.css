@@ -1,0 +1,7 @@
+.main_container{
+    box-sizing: border-box;
+    border: 1px solid teal;
+    width:94%;
+    height:100vh;
+    margin: auto;
+}

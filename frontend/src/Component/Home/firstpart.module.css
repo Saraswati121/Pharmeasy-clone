@@ -1,0 +1,9 @@
+.container{
+    width:100%;
+    height:150px;
+    border:1px dashed blue;
+}
+.box{
+    width:10%;
+    border:1px silver grey;
+}
