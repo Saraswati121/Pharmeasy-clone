@@ -21,7 +21,7 @@ const Firstpart = () => {
                 </div>
                 <div className={style.text_box}>
                     <p>{el.name}</p>
-                    <p>{el.discount}</p>
+                    <p className={style.text_box_red}>{el.discount}</p>
                 </div>
             </div>
           ))}
