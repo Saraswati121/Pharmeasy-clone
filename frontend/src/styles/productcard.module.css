@@ -1,29 +1,68 @@
 .productCardParent {
-  border: 1px solid teal;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.productCardParent:hover {
+  outline: 1px solid rgb(16, 132, 126);
 }
 .productCardParent .imgDiv {
+  height: 200px;
+  padding: 15px 0px 0px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  padding: 15px 0px 0px 0px;
+  /* background: url("https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1654078168.jpg")
+    no-repeat;
+  background-size: contain;
+  background-position: center; */
 }
 .productCardParent .imgDiv img {
   height: 100%;
-  width: 50%;
+  width: 100%;
+  float: left;
+  /* width: 100px;
+  height: 100px; */
+  object-fit: scale-down;
 }
-.productCardParent div+p{
-    font-size: 16px;
-    color: #4f585e;
-    font-weight: 900;
+.productCardParent div + p {
+  font-size: 16px;
+  color: #4f585e;
+  font-weight: 900;
+  width: 80%;
+  margin-bottom: 5%;
 }
-.productCardParent .cutoffPrice{
-    color: #8897A2;
-    font-size: 14px;
-    margin-top: -3%;
-    margin-bottom: -7%;
+.productCardParent .cutoffPrice {
+  color: #8897a2;
+  font-size: 14px;
+  margin-top: -3%;
+  margin-bottom: -7%;
 }
-.productCardParent .newPrice{
-    color: #4f585e;
-    font-weight: 600;
+.productCardParent .newPrice {
+  color: #4f585e;
+  font-weight: 600;
+}
+
+.productCardParent .discountBox {
+  /* border: 1px solid red;   */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  margin-bottom: -6%;
+}
+
+.productCardParent .discountBadge {
+  width: 33%;
+  height: 18px;
+  background-color: #f98c8e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 1px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

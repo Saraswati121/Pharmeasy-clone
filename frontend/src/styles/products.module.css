@@ -2,7 +2,7 @@
   height: auto;
   width: 75%;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 40px;
   display: flex;
   gap: 2%;
@@ -10,12 +10,12 @@
 .productsWrapper .leftChild {
   height: 100%;
   width: 25%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .productsWrapper .rightChild {
   height: 100%;
   width: 73%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .productsWrapper .leftChild h1,
 .productsWrapper .rightChild h1 {
@@ -71,7 +71,7 @@
 
 .productsWrapper .rightChild >div:first-child{
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     align-items: center;
     justify-content: space-between;
 }
@@ -88,8 +88,8 @@
 }
 .productsWrapper .rightChild >div:last-child{
     width: 100%;
-    height: 500px;
-    border: 1px solid blue;
+    height: auto;
+    /* border: 1px solid blue; */
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3,31%);
