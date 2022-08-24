@@ -7,10 +7,10 @@ import Homepage from './Homepage';
 export const Home = () => {
   return (
     <div>
-      {/* <Navbar/> */}
+      <Navbar/>
       <Homepage/>
-      {/* <Description/> */}
-      {/* <Footer/> */}
+      <Description/>
+      <Footer/>
     </div>
   )
 }
