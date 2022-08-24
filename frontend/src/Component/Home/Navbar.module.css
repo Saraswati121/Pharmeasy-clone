@@ -1,32 +1,73 @@
-.navbar{
-    border:1px solid red;
-    width:100%;
-    height:9vh;
-    position:fixed;
+.navbar {
+  border: 1px solid red;
+  width: 100%;
+  height: 8vh;
+ 
 }
-.navbar_part{
-    border:1px solid blue;
-    height:100%;
-    width:90%;
-    margin:auto;
-    display:flex;
-    justify-content: space-between;
+.navbar_part {
+  border: 1px solid blue;
+  box-sizing: border-box;
+  height: 100%;
+  width: 94%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+ 
 }
-.navbar_part1{
-    border:1px solid green;
-    height:100%;
-    width:30%;
+.navbar_part1 {
+  border: 1px solid green;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
-.navbar_part2{
-    border:1px solid green;
-    height:100%;
-    width:50%;
-    display:flex;
-    justify-content: space-between;
+.navbar_part1 > div {
+  width: 50%;
+  height: 100%;
 }
-.navbar_part2>div{
-    border:1px dashed black;
-    display:flex;
-    width:25%;
-    justify-content: space-around;
+.logo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.logo_mumbai {
+  border: 1px solid grey;
+}
+/* .icons{
+    border:1px dashed red;
+    height:80%;
+    width:80%;
+} */
+.navbar_part2 {
+  /* border:1px solid green; */
+  height: 70%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 12px;
+}
+.navbar_part2 > div {
+  /* border:1px dashed black; */
+  display: flex;
+  width: 22%;
+  justify-content: space-between;
+  margin: auto;
+}
+.select {
+  border: none;
+}
+.logo_part {
+  width: 20%;
+  /* border:1px solid red; */
+}
+.text_part {
+  width: 70%;
+  /* border:1px solid red; */
+  margin-top: 5px;
+}
+.logo_part_background {
+  background-color: rgb(238, 244, 255);
 }

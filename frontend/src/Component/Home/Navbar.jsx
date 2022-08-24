@@ -1,19 +1,129 @@
 import React from "react";
-import style from "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <div>
-      <div className={style.navbar}>
-        <div className={style.navbar_part}>
-          <div className={style.navbar_part1}>
-            <div></div>
-            <div></div>
+      <div className={styles.navbar}>
+        <div className={styles.navbar_part}>
+          <div className={styles.navbar_part1}>
+            <div className={styles.logo}>
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=360x0"
+                alt=""
+              />
+            </div>
+            <div className={styles.logo_mumbai}>
+              <div>
+                <img
+                  src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=16x0"
+                  alt=""
+                />
+                <span>Express delivery to</span>
+              </div>
+              <div>
+                <p>
+                  400001 Mumbai{" "}
+                  <span>
+                    <select className={styles.select}></select>
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
-          <div className={style.navbar_part2}>
-            <div>Download App</div>
-            <div>Hello,Login</div>
-            <div>Offers</div>
+          <div className={styles.navbar_part2}>
+            <div className={`${styles.icons} ${styles.logo_part_background}`}>
+              <div className={styles.logo_part} >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="c-cZuCZG c-cZuCZG-gtZKQU-size-large c-cZuCZG-dmsdwv-rotate-up c-cZuCZG-icDNilq-css"
+              >
+                <path
+                  d="M17.5 2H7.5C6.39543 2 5.5 2.89543 5.5 4V20C5.5 21.1046 6.39543 22 7.5 22H17.5C18.6046 22 19.5 21.1046 19.5 20V4C19.5 2.89543 18.6046 2 17.5 2Z"
+                  stroke="#30363C"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+                <path
+                  d="M12.5 18H12.51"
+                  stroke="#30363C"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+              </svg>
+              </div>
+              <div className={styles.text_part}>Download App</div>
+              
+              
+            </div>
             <div>
+              <div  className={styles.logo_part}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="c-cZuCZG c-cZuCZG-gtZKQU-size-large c-cZuCZG-dmsdwv-rotate-up c-cZuCZG-ieMTBas-css"
+              >
+                <path
+                  d="M12 10.04C13.6679 10.04 15.02 8.68789 15.02 7.01999C15.02 5.35209 13.6679 3.99999 12 3.99999C10.3321 3.99999 8.98003 5.35209 8.98003 7.01999C8.98003 8.68789 10.3321 10.04 12 10.04Z"
+                  stroke="#30363C"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+                <path
+                  d="M6.12002 20H17.88C18.1558 20.0026 18.4294 19.9509 18.6852 19.8478C18.941 19.7447 19.174 19.5922 19.3708 19.3991C19.5677 19.2059 19.7246 18.9759 19.8325 18.7221C19.9405 18.4683 19.9974 18.1958 20 17.92V16.57C20 15.76 19 15 17.67 14.37C15.8894 13.4975 13.9329 13.044 11.95 13.044C9.96718 13.044 8.01061 13.4975 6.23002 14.37C4.97002 15 4.00002 15.74 4.00002 16.54V17.89C3.99869 18.1683 4.05268 18.4441 4.15887 18.7013C4.26506 18.9586 4.42133 19.1922 4.61859 19.3885C4.81584 19.5848 5.05016 19.74 5.30792 19.845C5.56567 19.95 5.84172 20.0026 6.12002 20Z"
+                  stroke="#30363C"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></path>
+              </svg>
+              </div>
+              <div  className={styles.text_part}>Hello,Login</div>
+              
+            </div>
+            <div>
+              <div className={styles.logo_part}> <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="c-cZuCZG c-cZuCZG-gtZKQU-size-large c-cZuCZG-dmsdwv-rotate-up c-cZuCZG-hECRKn-type-rounded c-cZuCZG-ibKzAFS-css"
+              >
+                <path
+                  d="M10.6737 5.09702C10.968 3.63433 13.032 3.63433 13.3263 5.09702C13.5281 6.09956 14.7041 6.53299 15.495 5.89632C16.6489 4.96744 18.23 6.31092 17.527 7.62301C17.0452 8.52232 17.6709 9.61981 18.6809 9.64692C20.1545 9.68647 20.5129 11.7448 19.1416 12.2924C18.2016 12.6676 17.9843 13.9157 18.7408 14.5939C19.8446 15.5833 18.8126 17.3934 17.4145 16.9202C16.4562 16.5959 15.4976 17.4105 15.6466 18.4224C15.864 19.8988 13.9245 20.6137 13.1539 19.3412C12.6257 18.469 11.3743 18.469 10.8461 19.3412C10.0755 20.6137 8.13597 19.8988 8.35339 18.4224C8.50241 17.4105 7.54375 16.5959 6.5855 16.9202C5.18743 17.3934 4.15544 15.5833 5.25917 14.5939C6.01567 13.9157 5.79835 12.6676 4.85842 12.2924C3.48706 11.7448 3.84547 9.68647 5.31905 9.64692C6.32905 9.61981 6.95478 8.52232 6.47296 7.62301C5.76999 6.31092 7.35109 4.96744 8.50503 5.89632C9.29594 6.53299 10.4719 6.09955 10.6737 5.09702Z"
+                  stroke="#30363C"
+                  stroke-width="1.4"
+                  fill="none"
+                ></path>
+                <path
+                  d="M9.80078 9.69922V9.69922"
+                  stroke="#30363C"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                ></path>
+                <path
+                  d="M14.4014 14.3008V14.3008"
+                  stroke="#30363C"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  fill="none"
+                ></path>
+                <path
+                  d="M9.30581 13.8042C9.03244 14.0776 9.03244 14.5208 9.30581 14.7942C9.57917 15.0676 10.0224 15.0676 10.2958 14.7942L9.30581 13.8042ZM14.8958 10.1942C15.1691 9.92083 15.1691 9.47761 14.8958 9.20424C14.6224 8.93088 14.1792 8.93088 13.9058 9.20424L14.8958 10.1942ZM10.2958 14.7942L14.8958 10.1942L13.9058 9.20424L9.30581 13.8042L10.2958 14.7942Z"
+                  fill="none"
+                ></path>
+              </svg></div>
+              <div className={styles.text_part}>Offers</div>
+             
+            </div>
+            <div>
+              <div className={styles.logo_part}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -31,13 +141,15 @@ const Navbar = () => {
                 <path
                   d="M17.3982 20.5007C18.2211 20.5007 18.8882 19.8369 18.8882 19.0179C18.8882 18.199 18.2211 17.5352 17.3982 17.5352C16.5753 17.5352 15.9082 18.199 15.9082 19.0179C15.9082 19.8369 16.5753 20.5007 17.3982 20.5007Z"
                   stroke="#30363C"
-                  stroke-width="1"
+                  stroke-width="1.4"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   fill="none"
                 ></path>
               </svg>
-              <span>Cart</span>
+              </div>
+              <div className={styles.text_part}>Cart</div>
+              
             </div>
           </div>
         </div>
