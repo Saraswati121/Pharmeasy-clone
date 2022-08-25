@@ -1,17 +1,151 @@
 {
-    "image_data":[
-    {"image":"https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0","name":"Medicine","discount":"Upto 50% OFF"},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0","name":"LabTest","discount":"Upto 70% OFF"},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0","name":"Health Care","discount":"Upto 60% OFF"},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0","name":"Health Blogs","discount":""},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0","name":"Plus","discount":"SAVE 5% EXTRA"},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0","name":"Offers","discount":""},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0","name":"Surgeries","discount":""},
-    {"image":"https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0","name":"Value","discount":"Upto 50% OFF"}
-    ],
-    "first_corausal":[
-        {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/4337b25f55e-SAVER20.jpg"},
-        {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg"},
-        {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg"}
-    ]
+  "image_data": [
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0",
+      "name": "Medicine",
+      "discount": "Upto 50% OFF"
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0",
+      "name": "LabTest",
+      "discount": "Upto 70% OFF"
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0",
+      "name": "Health Care",
+      "discount": "Upto 60% OFF"
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0",
+      "name": "Health Blogs",
+      "discount": ""
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0",
+      "name": "Plus",
+      "discount": "SAVE 5% EXTRA"
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0",
+      "name": "Offers",
+      "discount": ""
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0",
+      "name": "Surgeries",
+      "discount": ""
+    },
+    {
+      "image": "https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0",
+      "name": "Value",
+      "discount": "Upto 50% OFF"
+    }
+  ],
+  "first_corausal": [
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/banner/banner/4337b25f55e-SAVER20.jpg"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/banner/banner/fb080c50a17-LabApp.jpg"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg"
+    }
+  ],
+  "shop_by_category": [
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png",
+      "title": "Covid Essentials",
+      "link": "/products/Covid Essentials"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/b4a3a67a59783e0ca738884c9acc8e7b.png",
+      "title": "Personal Care",
+      "link": "/products/Personal Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/62e6d7551ecf3a5da1d2336c41cc0549.png",
+      "title": "Health Food and Drinks",
+      "link": "/products/Health Food and Drinks"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/8a45f5baa68e3b72ae631003faa97bdb.png",
+      "title": "Beauty",
+      "link": "/products/Beauty"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ff5aaa03881e3016bf409f85b4e328aa.png",
+      "title": "Skin Care",
+      "link": "/products/Skin Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/68ae87e29f4a3abbb8ed69fe7ecf057c.png",
+      "title": "Home Care",
+      "link": "/products/Home Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4209e1d247cd30fca1f619786fa3e9c1.png",
+      "title": "Ayurvedic Care",
+      "link": "/products/Ayurvedic Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/7e509ee2f5413b0483d00c0b30067ee0.png",
+      "title": "Sexual Wellness",
+      "link": "/products/Sexual Wellness"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/0e9613b95131376b95bcbf92c48149b5.png",
+      "title": "Fitness & Supplements",
+      "link": "/products/Fitness & Supplements"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/af8d32e30757338787ca3e9267865d4f.png",
+      "title": "Mother and Baby Care",
+      "link": "/products/Mother and Baby Care"
+    }
+  ],
+  "new_launches": [
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/G70731/pharmeasy-glutathione-promotes-healthy-skin-reverses-signs-of-ageing-bottle-of-30-2-1657795587.jpg?dim=1440x0",
+      "title": "Pharmeasy Glutathione - Promotes Healthy",
+      "dis_price": "1399.00",
+      "price": "699.50",
+      "discount": "15% OFF"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/D90191/liveasy-wellness-pain-relief-spray-55gm-2-1659963248.jpg?dim=1440x0",
+      "title": "Liveasy Wellness Pain Relief Spray 55gm",
+      "dis_price": "199.00",
+      "price": "199.00",
+      "discount": ""
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/323281/olemessa-soft-soap-1-1641398676.jpg?dim=1440x0",
+      "title": "Olemessa Soft Soap",
+      "dis_price": "180.00",
+      "price": "153.00",
+      "discount": "15% OFF"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/M80181/colin-glass-and-surface-cleaner-liquid-regular-500ml-pack-of-3-1-1650020382.jpg?dim=1440x0",
+      "title": "Colin Glass And Surface Cleaner Liquid, Regular - 500ml",
+      "dis_price": "288.00",
+      "price": "2879.36",
+      "discount": "3% OFF"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/V97486/reverzo-anti-acne-face-wash-100g-2-1656922155.jpg?dim=1440x0",
+      "title": "Reverzo Anti-acne Face Wash 100g",
+      "dis_price": "199.00",
+      "price": "199.00",
+      "discount": ""
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/C94919/upglam-sunscreen-lotion-50gm-2-1659342343.jpg?dim=1440x0",
+      "title": "Upglam Sunscreen Lotion-50gm",
+      "dis_price": "199.00",
+      "price": "129.35",
+      "discount": "35% OFF"
+    }
+  ]
 }
