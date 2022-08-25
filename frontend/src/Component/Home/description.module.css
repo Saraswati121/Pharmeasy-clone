@@ -1,8 +1,9 @@
 .container {
     width:90%;
-    margin:auto;
+    margin: 90px auto 0 auto;
     font-size: 15px;
     padding: 10px 33px;
     text-align: justify;
     color: #4f585e;
+    
   }
