@@ -16,6 +16,8 @@ export const Cart = () => {
         </div>
         <div>
           <SingleCartCard/>
+          <SingleCartCard/>
+          <SingleCartCard/>
         </div>
       </div>
       <div className={styles.cartBilling}></div>
