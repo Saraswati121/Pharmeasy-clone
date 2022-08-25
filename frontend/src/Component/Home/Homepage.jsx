@@ -5,6 +5,10 @@ import Carousal from './Carousal';
 import Shop from './Shop';
 import { Customer } from './Customer';
 import Newlaunches from './Newlaunches';
+import Trending from './Trending';
+import { Choose } from './Choose';
+import Health from './Health';
+import Sliderr from './Sliderr';
 const Homepage = () => {
   return (
     <div>
@@ -13,6 +17,10 @@ const Homepage = () => {
           <Carousal/>
           <Shop/>
           <Newlaunches/>
+          <Trending/>
+          <Choose/>
+          <Sliderr/>
+          <Health/>
           <Customer/>
         </div>
     </div>

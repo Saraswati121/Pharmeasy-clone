@@ -1,10 +1,12 @@
-import React from "react";
-import style from "./launch.module.css";
-import Data from "./Data.json";
+import React from 'react'
+import style from './health.module.css'
+import Data from './Data.json'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+
 
 function NextArrow(props) {
   const { className, style, onClick } = props;
@@ -15,18 +17,17 @@ function NextArrow(props) {
         ...style,
         display: "block",
         color: "black",
-        height: "3rem",
-        marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        height: "2rem",
+        background: "none",
+        width: "2rem",
         zIndex: 50,
-        borderRadius: "50%",
+        borderRadius:"50%"
       }}
       onClick={onClick}
     />
   );
 }
-
+  
 function PrevArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -36,68 +37,73 @@ function PrevArrow(props) {
         ...style,
         display: "block",
         color: "black",
-        height: "3rem",
-        marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        height: "2rem",
+        background: "none",
+        width: "2rem",
         zIndex: 50,
-        borderRadius: "50%",
+        borderRadius:"50%"
       }}
       onClick={onClick}
     />
   );
 }
 
-const Newlaunches = () => {
+
+const Health = () => {
   const settings = {
     infinite: true,
     dots: true,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
     focusOnSelect: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    responsive: [
+    responsive:[
       {
         breakpoint: 480,
         settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 6, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 8, slidesToScroll: 1 },
       },
-    ],
+    ]
   };
   return (
     <div>
       <div className={style.container}>
-        <h2 className={style.container_text}>New Launches</h2>
-        <p className={style.container_text2}>New wellness range just for you!</p>
-        <div className={style.sub_container}>
+         <h2 className={style.container_text} >Health Articles</h2>
+         <div className={style.sub_container}>
           <Slider {...settings}>
-            {Data.new_launches.map((el) => (
-              <div key={el.title} className={style.image_box}>
-                <div className={style.image}>
+          {
+              Data.health.map((el)=>(
+                <div key={el.title} className={style.image_box}>
+                  <div className={style.image}>
                   <img src={el.image} alt={el.title} />
+                  </div>
+                  <div className={style.text}>
+                  <p >{el.title}</p>
+                  </div>
                 </div>
-                <div className={style.text}>
-                  <p>{el.title}</p>
-                </div>
-              </div>
-            ))}
+               
+              ))
+            }
           </Slider>
-        </div>
+            
+         </div>
       </div>
-    </div>
-  );
-};
 
-export default Newlaunches;
+  
+    </div>
+  )
+}
+
+export default Health

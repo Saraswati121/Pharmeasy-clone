@@ -17,3 +17,17 @@
     width:80%;
     border-radius: 10px;
 }
+
+.carousal_second{
+    /* border:1px solid green; */
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin:30px auto 0 auto;
+}
+.carousal_second > img{
+    margin:auto;
+    width:80%;
+    border-radius: 10px;
+}

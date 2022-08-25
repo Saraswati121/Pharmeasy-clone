@@ -1,0 +1,19 @@
+.container {
+    margin-top: 50px;
+
+    padding: 0 10px;
+    color: #515a60;
+    padding:10px 30px;
+    background-color: rgba(127, 255, 240, 0.085);
+  }
+  
+  .flexBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+  }
+  
+  .flexBox > div {
+    cursor: pointer;
+  }
