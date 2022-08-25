@@ -1,0 +1,93 @@
+.singleCartWrapper {
+  width: 100%;
+  height: 200px;
+  /* border: 1px solid teal; */
+  display: flex;
+  /* gap: 5%; */
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.singleCartImgDiv {
+  width: 16%;
+  height: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.singleCartImgDiv img {
+  /* height: 80%; */
+  width: 72%;
+  float: left;
+  /* width: 100px;
+  height: 100px; */
+  object-fit: scale-down;
+}
+.singleCartInfo {
+  width: 80%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.singleCartTitle {
+  height: 20%;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleCartTitle p {
+  font-weight: 900;
+  color: #4f585e;
+}
+.singleCartInfo .companyName {
+  font-size: 14px;
+  color: #8897a2;
+}
+
+.singleCartQty {
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleCartQty > div:last-child {
+  width: 30%;
+  /* border: 1px solid teal; */
+  color: #4f585e;
+  /* height: 50px; */
+}
+.singleCartQty > div:last-child > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.singleCartQty > div:last-child > p {
+  font-weight: 800;
+  text-align: right;
+  margin-top: -10%;
+}
+.singleCartInfo .deliveryTime {
+  color: #4f585e;
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+/* the delete icon */
+
+.singleCartInfo .deleteIcon {
+    width: 8%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.singleCartInfo .deleteIcon:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}

@@ -1,0 +1,99 @@
+.productsWrapper {
+  height: auto;
+  width: 75%;
+  margin: auto;
+  /* border: 1px solid black; */
+  margin-top: 40px;
+  display: flex;
+  gap: 2%;
+}
+.productsWrapper .leftChild {
+  height: 100%;
+  width: 25%;
+  /* border: 1px solid red; */
+}
+.productsWrapper .rightChild {
+  height: 100%;
+  width: 73%;
+  /* border: 1px solid red; */
+}
+.productsWrapper .leftChild h1,
+.productsWrapper .rightChild h1 {
+  font-size: 26px;
+  color: #4f585e;
+  letter-spacing: 0.5px;
+}
+.productsWrapper .leftChild .categoryDiv p,
+.subCategoryDiv p,
+.pricesFilterDiv p {
+  color: #4f585e;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+.categoryDiv,
+.subCategoryDiv,
+.pricesFilterDiv {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.radioInputBox {
+  /* border: 1px solid blue; */
+  width: 80%;
+  height: 30px;
+  font-size: 14px;
+  color: #4f585e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+.radioInputBox input {
+  height: 17px;
+  width: 17px;
+  margin-top: 0px;
+  background: rgb(16, 132, 126);
+  cursor: pointer;
+}
+/* input[type='radio']:checked::after{
+    background: rgb(16,132,126);
+    content: '';
+} */
+.productsWrapper .leftChild h4 {
+  color: #10847e;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* the right child */
+
+.productsWrapper .rightChild >div:first-child{
+    display: flex;
+    /* border: 1px solid blue; */
+    align-items: center;
+    justify-content: space-between;
+}
+.productsWrapper .rightChild >div:first-child h1+div{
+    /* border: 1px solid blue; */
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productsWrapper .rightChild >div:first-child h1+div>span{
+    font-size: 14px;
+    color: #4f585e;
+}
+.productsWrapper .rightChild >div:last-child{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,31%);
+    grid-template-rows: repeat(auto,300px);
+    column-gap: 3%;
+    row-gap: 20px;
+}

@@ -1,0 +1,39 @@
+.container {
+    /* border:2px solid red; */
+    padding:10px;
+  }
+  
+  .container > h3 {
+    color: #2d88c5;
+    margin-left: 20px;
+  }
+  
+  .user {
+    margin-bottom: 20px;
+  }
+  
+  .user > p {
+    margin: 0 17px;
+  }
+  
+  .user > p:nth-child(1) {
+    color: #363d41;
+    font-size: 17px;
+  }
+  
+  .user > p:nth-child(2) {
+    font-size: 15px;
+    color: gray;
+  }
+  
+  .message {
+    /* border:1px solid black; */
+    background-color: #f2fff8;
+    height: 260px;
+    color: #515a60;
+    font-size: 16px;
+    padding: 18px;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 10px;
+  }

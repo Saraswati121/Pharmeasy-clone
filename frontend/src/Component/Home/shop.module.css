@@ -1,0 +1,46 @@
+.container{
+    /* border: 1px dashed pink; */
+    width:100%;
+    margin-top: 40px;
+}
+.container_text{
+    margin-left: 30px;
+    font-size: 26px;
+}
+.sub_container{
+    margin-top: 20px;
+    /* border: 1px dashed greenyellow; */
+    
+  
+}
+.image_box{
+    margin:15px;
+    /* border:1px solid black; */
+    height:220px;
+    
+
+}
+.image{
+    width:80%;
+    border: 1px solid rgba(128, 128, 128, 0.203);
+    margin:auto;
+    height:70%;
+    border-radius: 5px;
+
+}
+.image img {
+    height:70%;
+    width:80%;
+    margin: 20px auto 0 auto;
+    object-fit: cover;
+}
+.text{
+    width:80%;
+    /* border: 1px dashed rebeccapurple; */
+    margin:auto;
+    height:20%;
+
+}
+.text p{
+    text-align: center;
+}
