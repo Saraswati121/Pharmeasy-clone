@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./products.module.css";
 import { ProductCard } from "../Product Card/ProductCard";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-export const Products = () => {
-  const [age, setAge] = React.useState("");
+const subCategoryFilters = [
+  "Men Care",
+  "Appliances",
+  "Women Care",
+  "Oral Care",
+  "Male Grooming",
+];
+const priceFilters = ["Below 99", "100-199", "200-299", "300-399", "400-499"];
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+export const Products = () => {
+  const [sortVal, setSortVal] = useState("");
+
+  const handleSubCategoryChange = (e) => {
+    console.log(e.target.value);
+  };
+
+  const handlePriceChange = (e) => {
+    console.log(e.target.value);
+  };
+
+  const handleSortChange = (e) => {
+    console.log(e.target.value);
+    setSortVal(e.target.value);
   };
 
   return (
@@ -32,26 +50,19 @@ export const Products = () => {
         ></div>
         <div className={styles.subCategoryDiv}>
           <p>Sub category</p>
-          <div className={styles.radioInputBox}>
-            Men Care
-            <input type="radio" />
-          </div>
-          <div className={styles.radioInputBox}>
-            Appliances
-            <input type="radio" />
-          </div>
-          <div className={styles.radioInputBox}>
-            Women Care
-            <input type="radio" />
-          </div>
-          <div className={styles.radioInputBox}>
-            Oral Care
-            <input type="radio" />
-          </div>
-          <div className={styles.radioInputBox}>
-            Male Grooming
-            <input type="radio" />
-          </div>
+          {subCategoryFilters.map((el, index) => {
+            return (
+              <div key={index} className={styles.radioInputBox}>
+                {el}
+                <input
+                  type="radio"
+                  onChange={handleSubCategoryChange}
+                  name="sub-Category"
+                  value={el}
+                />
+              </div>
+            );
+          })}
           <h4>View More</h4>
         </div>
         <div
@@ -63,26 +74,20 @@ export const Products = () => {
         ></div>
         <div className={styles.pricesFilterDiv}>
           <p>Price</p>
-          <div className={styles.radioInputBox}>
-            Below 99
-            <input type="checkbox" />
-          </div>
-          <div className={styles.radioInputBox}>
-            100-199
-            <input type="checkbox" />
-          </div>
-          <div className={styles.radioInputBox}>
-            200-299
-            <input type="checkbox" />
-          </div>
-          <div className={styles.radioInputBox}>
-            300-399
-            <input type="checkbox" />
-          </div>
-          <div className={styles.radioInputBox}>
-            400-499
-            <input type="checkbox" />
-          </div>
+          {priceFilters.map((el, index) => {
+            return (
+              <div key={index} className={styles.radioInputBox}>
+                {el}
+                <input
+                  type="checkbox"
+                  onChange={handlePriceChange}
+                  value={el}
+                  name="price-filter"
+                />
+              </div>
+            );
+          })}
+
           <h4>View More</h4>
         </div>
       </div>
@@ -93,15 +98,15 @@ export const Products = () => {
             <span>Sort By :</span>
             <FormControl sx={{ minWidth: 260 }} size="small">
               <Select
-                value={age}
-                onChange={handleChange}
+                value={sortVal}
+                onChange={handleSortChange}
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
               >
                 <MenuItem value="">Popularity</MenuItem>
-                <MenuItem value={10}>Price low to high</MenuItem>
-                <MenuItem value={20}>Price low to high</MenuItem>
-                <MenuItem value={30}>Discount</MenuItem>
+                <MenuItem value="l2h">Price low to high</MenuItem>
+                <MenuItem value="h2l">Price low to high</MenuItem>
+                <MenuItem value="dis">Discount</MenuItem>
               </Select>
             </FormControl>
           </div>
