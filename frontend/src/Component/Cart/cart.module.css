@@ -2,14 +2,10 @@
   width: 75%;
   margin: auto;
   height: 600px;
-  /* border: 1px solid black; */
   margin-top: 30px;
-  margin-bottom: 80px;
 }
 .cartTopBox {
   width: 100%;
-  /* height: 300px; */
-  /* border: 1px solid red; */
   display: flex;
 }
 .cartTopBox h1 {
@@ -20,26 +16,22 @@
 .cartTopBox > div:first-child {
   width: 60%;
   height: 100%;
-  /* border: 1px solid blue; */
 }
 .cartTopBox > div:last-child {
   width: 40%;
   height: 100%;
-  /* border: 1px solid blue; */
   display: flex;
   margin-left: 5%;
 }
 .cartSearchBox {
   width: 90%;
-  /* height: 60%; */
   border: 1px solid teal;
   background: rgb(16, 132, 126);
   border-radius: 5px;
   padding: 20px;
 }
 .cartSearchBox > div:first-child {
-  /* border: 2px solid white; */
-  width: 70%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,10 +43,8 @@
   color: #fff;
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
 }
 .cartSearchBox span > img {
-  /* margin-left: 10%; */
   margin-right: 5%;
 }
 .cartSearchBox h2 {
@@ -64,14 +54,28 @@
   margin-top: 25px;
 }
 .cartSearchBox input {
-  width: 100%;
-  font-size: 20px;
+  width: 85%;
+  font-size: 18px;
+  padding: 5px 0px;
+  outline: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border: none;
   margin: 10px 0px;
+}
+.cartSearchBox button{
+  background: #f4f7fb;
+  border: none;
+  padding: 2px;
+  margin-left: 0%;
+}
+.cartSearchBox>div:last-child{
+  display: flex;
+  align-items: center;
 }
 .cartTopBox > div:last-child h1 {
   font-size: 24px;
   color: #8897a2;
-  /* width: 40%; */
   padding: 20px;
   margin-top: 20%;
 }
@@ -86,8 +90,6 @@
   width: 55%;
   height: 300px;
   margin: auto;
-  /* border: 1px solid black; */
-  margin-top: 70px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
@@ -95,7 +97,6 @@
 .cartInfoBox > div {
   width: 30%;
   height: 100%;
-  /* border: 1px solid red; */
 }
 .cartInfoBox h2 {
   font-size: 16px;
@@ -110,7 +111,6 @@
 
 .appStoreBox {
   width: 75%;
-  /* border: 1px solid black; */
   height: 400px;
   margin: auto;
   margin-bottom: 50px;
@@ -123,7 +123,6 @@
 }
 .appStoreBox > div {
   width: 40%;
-  /* border: 1px solid red; */
   height: 200px;
 }
 .appStoreBox > div p {
@@ -132,7 +131,6 @@
 }
 .appStoreBox > div > div {
   display: flex;
-  /* border: 1px solid blue; */
   height: 80px;
   width: 100%;
   gap: 6%;
@@ -146,7 +144,6 @@
   font-size: 12px;
   display: flex;
   align-items: center;
-  /* justify-content: flex-start; */
   padding-left: 3%;
 }
 
@@ -154,8 +151,6 @@
 
 .cartWithItems {
   width: 75%;
-  /* height: 600px; */
-  border: 1px solid black;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 100px;
@@ -165,10 +160,8 @@
 .singleCartItem {
   width: 55%;
   height: auto;
-  /* border: 1px solid red; */
 }
 .singleCartItem > div:first-child {
-  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -187,7 +180,6 @@
 .cartBilling {
   width: 35%;
   height: 400px;
-  border: 1px solid red;
 }
 .cartBilling .applyCoupon{
   width: 100%;
@@ -229,8 +221,6 @@
 }
 .cartBilling .orderSummary{
   width: 100%;
-  /* height: 100px; */
-  border: 1px solid blue;
   margin-top: 20px;
 }
 .cartBilling .orderSummary>p{
@@ -239,7 +229,6 @@
   margin-bottom: 5px;
 }
 .cartBilling .orderSummary>div{
-  /* border: 1px solid teal; */
   display: flex;  
   align-items: center;
   justify-content: space-between;
@@ -248,4 +237,26 @@
   font-size: 14px;
   color: #4f585e;
   border-bottom: 1px dashed #9a9fa3;
+}
+.cartBilling .savingsBox{
+  width: 100%;
+  margin: 20px 0px;
+  height: 70px;
+  border: 1px dashed #10847e;
+  border-radius: 6px;
+  background: #f2fff8;
+  color: #10847e;
+}
+.cartBilling .savingsBox>p:first-child{
+  font-size: 14px;
+  margin-left: 5%;
+}
+.cartBilling .savingsBox>p:last-child{
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-top: -2%;
 }
