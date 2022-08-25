@@ -3,6 +3,7 @@ import style from './homepage.module.css'
 import Firstpart from './Firstpart';
 import Carousal from './Carousal';
 import Shop from './Shop';
+import { Customer } from './Customer';
 const Homepage = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Homepage = () => {
           <Firstpart/>
           <Carousal/>
           <Shop/>
+          <Customer/>
         </div>
     </div>
   )

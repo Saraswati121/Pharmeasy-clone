@@ -4,39 +4,50 @@ import style from './homepage.module.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{ ...style, background: "none" ,display: "block", marginRight:"30px",color: "black",
-        height: "2rem",
+
+function NextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <IoIosArrowForward
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        color: "black",
+        height: "3rem",
         marginRight: "1rem",
-        width: "2rem",
-        zIndex: 50,}}
-        onClick={onClick}
-      />
-    );
-  }
+        background: "moccasin",
+        width: "3rem",
+        zIndex: 50,
+        borderRadius:"50%"
+      }}
+      onClick={onClick}
+    />
+  );
+}
   
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    console.log(props);
-    return (
-      <div
-        className={className}
-        style={{ ...style, display: "block",marginLeft:"30px",color: "black",
-        height: "2rem",
+function PrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <IoIosArrowBack
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        color: "black",
+        height: "3rem",
         marginRight: "1rem",
-        background: "none",
-        width: "2rem",
-        zIndex: 50,}}
-        onClick={onClick}
-      />
-    );
-  }
-  
+        background: "moccasin",
+        width: "3rem",
+        zIndex: 50,
+        borderRadius:"50%"
+      }}
+      onClick={onClick}
+    />
+  );
+}
 const Carousal = () => {
     const settings = {
         infinite: true,
@@ -44,12 +55,12 @@ const Carousal = () => {
         slidesToShow: 2,
         slidesToScroll: 1,
         lazyLoad: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         arrows: true,
         focusOnSelect: true,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
         responsive:[
           {
             breakpoint: 480,
