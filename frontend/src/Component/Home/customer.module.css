@@ -1,11 +1,11 @@
 .container {
     /* border:2px solid red; */
-    margin-bottom: 50px;
     padding:10px;
   }
   
   .container > h3 {
-    color: #515a60;
+    color: #2d88c5;
+    margin-left: 20px;
   }
   
   .user {
@@ -35,4 +35,5 @@
     padding: 18px;
     box-sizing: border-box;
     margin: 15px;
+    border-radius: 10px;
   }

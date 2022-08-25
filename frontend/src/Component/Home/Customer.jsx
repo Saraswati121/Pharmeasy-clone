@@ -94,7 +94,7 @@ const Customer = () => {
   };
   return (
     <div className={styles.container}>
-      <Heading size="md" m="1rem" style={{ color: "#55585e" }}>
+      <Heading size="md" m="1rem" style={{marginLeft:"17px"}}>
         What our customers have to say
       </Heading>
 
