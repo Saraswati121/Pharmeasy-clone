@@ -4,6 +4,7 @@ import Firstpart from './Firstpart';
 import Carousal from './Carousal';
 import Shop from './Shop';
 import { Customer } from './Customer';
+import Newlaunches from './Newlaunches';
 const Homepage = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Homepage = () => {
           <Firstpart/>
           <Carousal/>
           <Shop/>
+          <Newlaunches/>
           <Customer/>
         </div>
     </div>
