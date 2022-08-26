@@ -50,6 +50,9 @@
     },
     {
       "image": "https://cdn01.pharmeasy.in/dam/banner/banner/86df3a0dc37-HP.jpg"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/banner/banner/e11428d1f4b-pcb10_app.jpg"
     }
   ],
   "shop_by_category": [
@@ -228,5 +231,60 @@
     {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/009377c7fc6-Bone_Health.jpg?dim=256x0"},
     {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/7b5b1ec656e-Covid_Care.jpg?dim=256x0"},
     {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/375759a3a26-Women_Care.jpg?dim=256x0"}
+  ],
+  "paymennt__offers":[
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/dfdcb534963-hsbc.jpg?dim=1440x0"},
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0"},
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/0c5c9ec6841-mobikwik.jpg?dim=1440x0"},
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/3c88b411e46-ola-money.jpg?dim=1440x0"},
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/b530ee057a3-freecharge.jpg?dim=1440x0"},
+    {"imagge":"https://cdn01.pharmeasy.in/dam/banner/banner/7297689b914-AIRTEL.jpg?dim=1440x0"}
+    
+  ],
+  "feature_brands":[
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/c395211bd1d-Dabur-min.png?dim=1440x0","title":"Dabur"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/1151b7d7c0e-LivEasy-min.png?dim=1440x0","title":"LivEasy"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/1466c422fcd-Sugerfree.png?dim=1440x0","title":"SugarFree"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/c9fc0cd6ef6-Revital-min.png?dim=1440x0","title":"Revital"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/e8a5cabe9f3-Volini-min.png?dim=1440x0","title":"Volini"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/2318a0e5326-App_Abzorb.jpg?dim=1440x0","title":"Abzorb"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/2f3e832e341-Everherb-min.png?dim=1440x0","title":"EverHerb"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/201210bc27d-App_Huggies.jpg?dim=1440x0","title":"Huggies"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/aaccdfbacaa-Aptivate-min.png?dim=1440x0","title":"Aptivate"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/e2525e84c8e-App_harpic.jpg?dim=1440x0","title":"Harpic"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/c774461a093-Pentasure_App.jpg?dim=1440x0","title":"Pentasure"},
+    {"'image":"https://cms-contents.pharmeasy.in/carousel_item/40facc7fa28-Pharmeasy-App.jpg?dim=1440x0","title":"Pharmeasy"}
+  ],
+  "shop_by_concern":[
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0","title":"Skin Care"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/18d2e2ee86b-Vitamins.png?dim=128x0","title":"Vitamins & Supplements"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/0af9ac9f350-Diabetes.webp?dim=128x0","title":"Diabetes Care & Sugar"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/24a0d2c733e-Heart.webp?dim=128x0","title":"Cardiac Care"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/68369c9df98-Pregnancy.webp?dim=128x0","title":"Baby & Mom Care"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/16ab65c0826-Covid.webp?dim=128x0","title":"Covid Care"
+    },
+    {
+      "image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/26bbd7a9e98-Lifestyle.webp?dim=128x0","title":"Lifestyle Disorders"
+    }
+  ],
+  "offers":[
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/9fe349e885e-WEIGHING_MACHINE.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/414524ad3dd-SNACK.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/fcbf95577c3-VELCRO.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/a9ad640ce01-4.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/a6f2ed93479-BACK_SUPPORT.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/93ef9d6df4f-SLIPPERS.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/6e16a38ea89-ORTHO_PEDOC.jpg?dim=1440x0"}
   ]
 }
