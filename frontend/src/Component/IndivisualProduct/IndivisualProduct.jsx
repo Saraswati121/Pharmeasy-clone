@@ -215,7 +215,7 @@ const IndividualProduct = () => {
                     </Flex>
                     <Text fontSize="10px" color="#8e9ca7">Inclusive of all taxes</Text>
                     <Text py="10px" fontSize="12px">
-                      Delivery by <span style={{ fontWeight: "700" }}>Aug 29</span>
+                      Delivery by <span style={{ fontWeight: "700" }}>Tomorrow, before 10:00 pm</span>
                     </Text>
                     <Button
                       className="addToStore"
