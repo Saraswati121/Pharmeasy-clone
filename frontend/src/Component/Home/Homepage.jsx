@@ -9,6 +9,7 @@ import Trending from './Trending';
 import { Choose } from './Choose';
 import Health from './Health';
 import Sliderr from './Sliderr';
+import Labtest from './Labtest';
 const Homepage = () => {
   return (
     <div>
@@ -17,10 +18,11 @@ const Homepage = () => {
           <Carousal/>
           <Shop/>
           <Newlaunches/>
+          <Labtest/>
           <Trending/>
           <Choose/>
           <Sliderr/>
-          {/* <Health/> */}
+          <Health/>
           <Customer/>
         </div>
     </div>
