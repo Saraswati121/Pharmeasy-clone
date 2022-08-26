@@ -20,7 +20,7 @@ const Homepage = () => {
           <Trending/>
           <Choose/>
           <Sliderr/>
-          <Health/>
+          {/* <Health/> */}
           <Customer/>
         </div>
     </div>
