@@ -4,7 +4,7 @@ import { ProductCard } from "./ProductCard/ProductCard";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const subCategoryFilters = [
   "Men Care",
@@ -26,7 +26,19 @@ export const Products = () => {
   };
 
   const handlePriceChange = (e) => {
-    console.log(e.target.value);
+    const str = e.target.value.split("-");
+    const lower = str[0];
+    const upper = str[1];
+    console.log(lower, upper);
+    if (!upper) {
+      // const newData = productsData.filter((el,index)=>{
+      // return el.newPrice>0 && el.newPrice<100;
+      // })
+    } else {
+      // const newData = productsData.filter((el,index)=>{
+      // return el.newPrice>=lower && el.newPrice<=upper;
+      // })
+    }
   };
 
   const handleSortChange = (e) => {
@@ -122,6 +134,9 @@ export const Products = () => {
           </div>
         </div>
         <div>
+          {/* {productData.map((el,index)=>{
+            return <ProductCard key={index} {...el}/>
+          })} */}
           <ProductCard />
           <ProductCard />
           <ProductCard />
