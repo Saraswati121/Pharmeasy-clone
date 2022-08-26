@@ -3,6 +3,8 @@ import { Products } from "../Component/Products/Products";
 import { Routes, Route } from "react-router-dom";
 import { Cart } from "../Component/Cart/Cart";
 import { Home } from './../Component/Home/Home';
+import {OTP} from "../Component/LoginOTP/OTP"
+import {OtpBox} from "../Component/LoginOTP/OtpBox"
 
 export const AllRoutes = () => {
   return (
@@ -13,6 +15,8 @@ export const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/OTP" element={<OTP />} />
+        <Route path="/OtpBox" element={<OtpBox />} />
       </Routes>
     </div>
   );
