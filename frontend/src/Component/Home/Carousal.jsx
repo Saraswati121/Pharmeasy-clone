@@ -81,7 +81,7 @@ const Carousal = () => {
         <Slider {...settings}>
             
                     {Data.first_corausal.map((el)=>(
-                      <div className={style.carousal_second}>
+                      <div className={style.carousal}>
                         <img src={el.image} />
                       </div>
                     ))}

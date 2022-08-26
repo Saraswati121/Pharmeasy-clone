@@ -51,7 +51,7 @@ const Labtest = () => {
   const settings = {
     infinite: true,
     dots: true,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
@@ -77,16 +77,18 @@ const Labtest = () => {
   };
   return (
     <div>
+        <div className={style.parent_container}>
+            <h1 className={style.text}>Lab Tests by Health Concern</h1>
         <Slider {...settings}>
             
-            {Data.slide_images.map((el)=>(
-              <div className={style.carousal_second}>
+            {Data.lab_test.map((el)=>(
+              <div className={style.carousal_health}>
                 <img src={el.image} />
               </div>
             ))}
-            
-       
     </Slider>
+        </div>
+       
     </div>
   )
 }
