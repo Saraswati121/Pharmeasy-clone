@@ -1,7 +1,7 @@
 
 // import { Home } from "./Component/Home/Home";
 
-import HKCharkra from "./Component/healthcare/HKCharkra";
+import IPChakra from "./Component/IndivisualProduct/IPChakra";
 
 
 // import { AllRoutes } from "./Routes/AllRoutes";
@@ -13,7 +13,7 @@ function App() {
 
       {/* <Home/>
       <AllRoutes/> */}
-      <HKCharkra/>
+      <IPChakra/>
 
     </div>
   );
