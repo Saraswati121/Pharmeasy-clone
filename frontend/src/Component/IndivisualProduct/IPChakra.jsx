@@ -1,13 +1,15 @@
+
+
 import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
-import HealthCare from './Healthcare'
+import IndividualProduct from './IndivisualProduct'
 
-const Charkra = () => {
+const IPChakra = () => {
     return (
         <ChakraProvider>
-            <HealthCare />
+            <IndividualProduct/>
         </ChakraProvider>
     )
 }
 
-export default Charkra
+export default IPChakra
