@@ -10,6 +10,9 @@ import { Choose } from './Choose';
 import Health from './Health';
 import Sliderr from './Sliderr';
 import Labtest from './Labtest';
+import Featurebrand from './Featurebrand';
+import Offer from './Offer';
+import Payment from './Payment';
 const Homepage = () => {
   return (
     <div>
@@ -22,7 +25,10 @@ const Homepage = () => {
           <Trending/>
           <Choose/>
           <Sliderr/>
+          <Payment/>
           <Health/>
+          <Featurebrand/>
+          <Offer/>
           <Customer/>
         </div>
     </div>
