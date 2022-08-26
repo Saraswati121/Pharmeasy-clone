@@ -2,7 +2,7 @@ import React from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import HealthCare from './Healthcare'
 
-const Charkra = () => {
+const HKCharkra = () => {
     return (
         <ChakraProvider>
             <HealthCare />
@@ -10,4 +10,4 @@ const Charkra = () => {
     )
 }
 
-export default Charkra
+export default HKCharkra
