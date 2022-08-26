@@ -31,9 +31,8 @@
     float: left;
   }
   .login {
-   margin-left: 23px;
     font-weight: bold;
-    width: 80%;
+   text-align: left;
     font-size: 15px;
     color: 
     #525b61;
@@ -64,9 +63,9 @@
     font-size: 14px;
   }
   .otpInput{
-    width:20px;
+    width:29px;
     height:20px;
-    margin-right: 10px;
+    margin-right: 40px;
     padding: 10px;
     text-align: center;
     margin-top: 10px;
@@ -75,3 +74,9 @@
 #ip{
     margin-left: 78px;
 }
+ #main{
+ width: 30%;
+ text-align: center;
+  position: absolute;
+  right: 6px;
+} 

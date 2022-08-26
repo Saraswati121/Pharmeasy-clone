@@ -1,15 +1,12 @@
 
 import { AllRoutes } from "./Routes/AllRoutes";
-import {OtpBox} from "./Component/LoginOTP/OtpBox"
-import {OTP} from "./Component/LoginOTP/OTP"
+import {Offer} from "./Component/Offer/Offer"
 function App() {
   return (
     <div className="App">
 
       {/* <AllRoutes /> */}
-
-     <OtpBox/>
-     {/* <OTP/> */}
+      <Offer/>
 
     </div>
   );
