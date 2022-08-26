@@ -18,7 +18,7 @@ export const getProducts = () => (dispatch) => {
     dispatch({ type: productActions.GET_PRODUCT_LOADING });
 
     axios({
-        url: "/products",
+        url: "https://localhost:8080/products",
         method: 'GET',
         params: {}
     }).then((res) => {
@@ -37,7 +37,7 @@ export const getIndividualProducts = ({ id }) => (dispatch, getState) => {
     dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_LOADING });
 
     axios({
-        url: `/products/${id}`,
+        url: `https://localhost:8080/products/${id}`,
         method: 'GET',
         params: {}
     }).then((res) => {
