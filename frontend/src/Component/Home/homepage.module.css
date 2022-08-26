@@ -19,7 +19,6 @@
 }
 
 .carousal_second{
-    /* border:1px solid green; */
     width:30%;
     display: flex;
     justify-content: space-around;
@@ -30,4 +29,6 @@
     margin:auto;
     width:80%;
     border-radius: 10px;
+    height:150px;
+
 }
