@@ -4,7 +4,7 @@ import styles from "./cart.module.css";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple, AiOutlineSearch } from "react-icons/ai";
 import { FiChevronRight } from "react-icons/fi";
-import { SingleCartCard } from "../SingleCartCard/SingleCartCard";
+import { SingleCartCard } from "./SingleCartCard/SingleCartCard";
 
 export const Cart = () => {
   return (

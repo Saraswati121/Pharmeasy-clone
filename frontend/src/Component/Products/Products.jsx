@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./products.module.css";
-import { ProductCard } from "../Product Card/ProductCard";
+import { ProductCard } from "./ProductCard/ProductCard";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { useSelector } from "react-redux";
 
 const subCategoryFilters = [
   "Men Care",
@@ -15,6 +16,9 @@ const subCategoryFilters = [
 const priceFilters = ["Below 99", "100-199", "200-299", "300-399", "400-499"];
 
 export const Products = () => {
+  // const [productData,setProductData] = useState([]);
+  // const { products } = useSelector();
+  // setProductData(products)
   const [sortVal, setSortVal] = useState("");
 
   const handleSubCategoryChange = (e) => {
@@ -26,8 +30,14 @@ export const Products = () => {
   };
 
   const handleSortChange = (e) => {
-    console.log(e.target.value);
     setSortVal(e.target.value);
+    if (sortVal === "l2h") {
+      // const newData = products.sort((a,b)=>a.newPrice-b.newPrice)
+      // setProductData(newData);
+    } else if (sortVal === "h2l") {
+      // const newData = products.sort((a,b)=>b.newPrice-a.newPrice)
+      // setProductData(newData);
+    }
   };
 
   return (
@@ -38,7 +48,7 @@ export const Products = () => {
           <p>Category</p>
           <div className={styles.radioInputBox}>
             Personal Care
-            <input type="radio" />
+            <input type="radio" defaultChecked />
           </div>
         </div>
         <div
