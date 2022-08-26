@@ -106,21 +106,21 @@
   ],
   "new_launches": [
     {
-      "image": "https://cdn01.pharmeasy.in/dam/products_otc/G70731/pharmeasy-glutathione-promotes-healthy-skin-reverses-signs-of-ageing-bottle-of-30-2-1657795587.jpg?dim=1440x0",
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/G70731/pharmeasy-glutathione-promotes-healthy-skin-reverses-signs-of-ageing-bottle-of-30-2-1657795587.jpg",
       "title": "Pharmeasy Glutathione - Promotes Healthy",
       "dis_price": "1399.00",
       "price": "699.50",
       "discount": "15% OFF"
     },
     {
-      "image": "https://cdn01.pharmeasy.in/dam/products_otc/D90191/liveasy-wellness-pain-relief-spray-55gm-2-1659963248.jpg?dim=1440x0",
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/D90191/liveasy-wellness-pain-relief-spray-55gm-2-1659963248.jpg",
       "title": "Liveasy Wellness Pain Relief Spray 55gm",
       "dis_price": "199.00",
       "price": "199.00",
       "discount": ""
     },
     {
-      "image": "https://cdn01.pharmeasy.in/dam/products_otc/323281/olemessa-soft-soap-1-1641398676.jpg?dim=1440x0",
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/323281/olemessa-soft-soap-1-1641398676.jpg?dim=1024x0",
       "title": "Olemessa Soft Soap",
       "dis_price": "180.00",
       "price": "153.00",
@@ -147,5 +147,86 @@
       "price": "129.35",
       "discount": "35% OFF"
     }
+  ],
+  "trending": [
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/62e6d7551ecf3a5da1d2336c41cc0549.png",
+      "title": "Horlicks Health & Nutrition Drink Jar, 500 G",
+      "link": "/products/Covid Essentials"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1654234653.jpg?dim=1440x0",
+      "title": "Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l",
+      "link": "/products/Personal Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1654168216.jpg?dim=1440x0",
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "link": "/products/Health Food and Drinks"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/I32680/accu-chek-instant-glucometer-test-strips-box-of-50-1-1654166925.jpg?dim=1440x0",
+      "title": "Accu-chek Instant Glucometer Test Strips Box Of 50Accu-chek Instant Glucometer Test Strips",
+      "link": "/products/Beauty"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4209e1d247cd30fca1f619786fa3e9c1.png",
+      "title": "Pharmeasy Hot Water Bag - Relieves Pain - Relaxes Sore Muscles - Improves Blood Supply ",
+      "link": "/products/Skin Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/discovery/categoryImages/68ae87e29f4a3abbb8ed69fe7ecf057c.png",
+      "title": "Dettol Antiseptic Liquid Bottle Of 550 Ml",
+      "link": "/products/Home Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/J51815/liveasy-wellness-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1654165611.jpg?dim=1440x0",
+      "title": "Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+      "link": "/products/Ayurvedic Care"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/332964/manforce-xotic-extra-dotted-vegan-condoms-for-men-with-1500-dots-strawberry-flavour-10-counts-2-1654258146.jpg?dim=1440x0",
+      "title": "Manforce Xotic Extra Dotted Vegan Condoms For Men, With 1500 Dots, Strawberry Flavour",
+      "link": "/products/Sexual Wellness"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products/177415/unienzyme-strip-of-15-tablets-2-1642155532.jpg?dim=1440x0",
+      "title": "Unienzyme Strip Of 15 Tablets",
+      "link": "/products/Fitness & Supplements"
+    },
+    {
+      "image": "https://cdn01.pharmeasy.in/dam/products_otc/207669/ensure-vanilla-nutrition-drink-refill-of-1-kg-1-1657004009.jpg?dim=1440x0",
+      "title": "Ensure Vanilla Nutrition Drink Refill Of 1 Kg",
+      "link": "/products/Mother and Baby Care"
+    }
+  ],
+  "health":[
+    {"image":"https://blog-images.pharmeasy.in/2022/08/25173915/Blog-Images-24-Aug-1.jpg?dim=1440x0","title":"Benefits Of Generic Medicines You Must Know"},
+    {"image":"https://blog-images.pharmeasy.in/2022/08/25113117/Blog-Images-24-Aug-01.jpg?dim=1440x0","title":"Generic Vs Non-Generic Medicines: Everything You Need To Know"},
+    {"image":"https://blog-images.pharmeasy.in/2018/05/03101605/PE_Blog5.png?dim=1440x0","title":"Natural Home Remedies For Kidney Stone By Dr. Siddharth Gupta"},
+    {"image":"https://blog-images.pharmeasy.in/2020/01/24163229/022.jpg?dim=1440x0","title":"Home Remedies For Asthma By Dr. Siddharth Gupta"},
+    {"image":"https://blog-images.pharmeasy.in/2021/03/16190148/shutterstock_1035357679-1.jpg?dim=1440x0","title":"Natural Home Remedies For Constipation By Dr. Siddharth Gupta"},
+    {"image":"https://blog-images.pharmeasy.in/2018/07/19103935/Image_2-11.jpg?dim=1440x0","title":"Home Remedies For Vaginal Yeast Infection By Dr. Siddharth Gupta"}
+    
+  ],
+  "slide_images":[
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/61106411a79-PCSB.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/1f46e6b462d-Neurobion-SB.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/4e862faf00f-Abzorb-SBm.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/7cff4ce6f24-Lizol-SB.jpg?dim=1440x0"},
+    {"image":"https://cdn01.pharmeasy.in/dam/banner/banner/3b7370fee2e-SB_hansaplast.jpg?dim=1440x0"}
+ 
+  ],
+  "lab_test":[
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/e9fec637561-Vitamins.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/f055b8d7606-Fever_Infection.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/0108134f09b-Health_Checkups.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/686b12c5c64-Heart.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/6c5765fb3e7-Diabetes.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/453e093976a-thyroid.png?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/a0c71fca127-Rename.png?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/009377c7fc6-Bone_Health.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/7b5b1ec656e-Covid_Care.jpg?dim=256x0"},
+    {"image":"https://cms-contents.pharmeasy.in/homepage_top_categories_images/375759a3a26-Women_Care.jpg?dim=256x0"}
   ]
 }

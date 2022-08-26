@@ -127,7 +127,6 @@ export default function Carausal() {
                 onClick={() => slider?.slickNext()}>
                 <MdKeyboardArrowRight color="#0f847e" size={20} />
             </IconButton>
-
             <Slider {...settings} ref={(slider) => setSlider(slider)} >
                 {cardsData.map((elem, index) => (
                     <CarausalCard key={elem.id} elem={elem} />
