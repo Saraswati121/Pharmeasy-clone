@@ -18,14 +18,17 @@ const IndividualProduct = () => {
   const error = useSelector((store) => store.products.isError)
   const { id } = useParams();
   const dispatch = useDispatch();
+  const [data, setData] = useState()
+  const [showImg, setShowImg] = useState();
+
   useEffect(() => {
     dispatch(getIndividualProducts({ id: id }))
   }, [dispatch, id])
-  const [data, setData] = useState()
+  
   console.log('data:', data)
-  const [showImg, setShowImg] = useState();
 
   const individualProduct = useSelector((store) => store.products.individualProduct);
+  console.log('individualProduct:', individualProduct)
   useEffect(() => {
     setData(individualProduct)
     setShowImg(individualProduct?.img1)

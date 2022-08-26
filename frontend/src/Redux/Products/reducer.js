@@ -4,7 +4,7 @@ import { productActions } from "./action"
 const initState = {
     isLoading: true,
     products: [],
-    individualProduct: null,
+    individualProduct: "",
     isError: false,
 }
 
