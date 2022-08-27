@@ -32,6 +32,11 @@
   color: #4f585e;
   font-weight: 900;
   width: 80%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin-bottom: 5%;
 }
 .productCardParent .cutoffPrice {
@@ -49,8 +54,8 @@
   /* border: 1px solid red;   */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 75%;
+  /* justify-content: space-between; */
+  width: 85%;
   margin-bottom: -6%;
 }
 
@@ -65,4 +70,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5%;
 }

@@ -44,12 +44,12 @@ router.post('/verify', async(req,res)=>{
     const {email,otp}=req.body;
     const findEmail= await OTP.findOne({email}).lean().exec()
     if(findEmail.otp === otp){
-       return res.status(201).send({message:"login successful"}) 
+       return res.status(200).send({message:"login successful"}) 
     }
-    return res.status(404).send({message:"Invalid OTP"})
+    return res.status(403).send({message:"Invalid OTP"})
     }
     catch(err){
-        return res.send(err)
+        return res.send({message:err.message})
     }
 })
 

@@ -1,56 +1,64 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./products.module.css";
 import { ProductCard } from "./ProductCard/ProductCard";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-// import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../Redux/Products/action";
 
 const subCategoryFilters = [
-  "Men Care",
-  "Appliances",
-  "Women Care",
-  "Oral Care",
-  "Male Grooming",
+  "Covid Test Kits",
+  "Disinfectants",
+  "Home Hygiene Essentials",
+  "Masks",
+  "Hand Sanitizers",
 ];
 const priceFilters = ["Below 99", "100-199", "200-299", "300-399", "400-499"];
 
 export const Products = () => {
-  // const [productData,setProductData] = useState([]);
-  // const { products } = useSelector();
-  // setProductData(products)
   const [sortVal, setSortVal] = useState("");
+  const [priceFilter, setPriceFilter] = useState("");
+  const [productData, setProductData] = useState([]);
+  const { products } = useSelector((store) => store.products);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    getProducts(dispatch);
+  }, []);
 
-  const handleSubCategoryChange = (e) => {
-    console.log(e.target.value);
-  };
+  useEffect(() => {
+    const sortArray = () => {
+      if (sortVal === "l2h") {
+        const newData = products.sort((a, b) => a.newPrice - b.newPrice);
+        setProductData([...newData]);
+      } else if (sortVal === "h2l") {
+        const newData = products.sort((a, b) => b.newPrice - a.newPrice);
+        setProductData([...newData]);
+      }
+    };
+    sortArray();
+  }, [sortVal]);
 
-  const handlePriceChange = (e) => {
-    const str = e.target.value.split("-");
-    const lower = str[0];
-    const upper = str[1];
-    console.log(lower, upper);
-    if (!upper) {
-      // const newData = productsData.filter((el,index)=>{
-      // return el.newPrice>0 && el.newPrice<100;
-      // })
-    } else {
-      // const newData = productsData.filter((el,index)=>{
-      // return el.newPrice>=lower && el.newPrice<=upper;
-      // })
-    }
-  };
-
-  const handleSortChange = (e) => {
-    setSortVal(e.target.value);
-    if (sortVal === "l2h") {
-      // const newData = products.sort((a,b)=>a.newPrice-b.newPrice)
-      // setProductData(newData);
-    } else if (sortVal === "h2l") {
-      // const newData = products.sort((a,b)=>b.newPrice-a.newPrice)
-      // setProductData(newData);
-    }
-  };
+  useEffect(() => {
+    const handlePriceChange = () => {
+      const str = priceFilter.split("-");
+      const lower = str[0];
+      const upper = str[1];
+      console.log(lower, upper);
+      if (!upper) {
+        const newData = products.filter((el, index) => {
+          return el.newPrice > 0 && el.newPrice < 100;
+        });
+        setProductData(newData);
+      } else {
+        const newData = products.filter((el, index) => {
+          return el.newPrice >= lower && el.newPrice <= upper;
+        });
+        setProductData(newData);
+      }
+    };
+    handlePriceChange();
+  }, [priceFilter]);
 
   return (
     <div className={styles.productsWrapper}>
@@ -59,7 +67,7 @@ export const Products = () => {
         <div className={styles.categoryDiv}>
           <p>Category</p>
           <div className={styles.radioInputBox}>
-            Personal Care
+            Covid Essentials
             <input type="radio" defaultChecked />
           </div>
         </div>
@@ -76,12 +84,7 @@ export const Products = () => {
             return (
               <div key={index} className={styles.radioInputBox}>
                 {el}
-                <input
-                  type="radio"
-                  onChange={handleSubCategoryChange}
-                  name="sub-Category"
-                  value={el}
-                />
+                <input type="radio" name="sub-Category" value={el} />
               </div>
             );
           })}
@@ -101,8 +104,8 @@ export const Products = () => {
               <div key={index} className={styles.radioInputBox}>
                 {el}
                 <input
-                  type="checkbox"
-                  onChange={handlePriceChange}
+                  type="radio"
+                  onChange={(e) => setPriceFilter(e.target.value)}
                   value={el}
                   name="price-filter"
                 />
@@ -115,32 +118,32 @@ export const Products = () => {
       </div>
       <div className={styles.rightChild}>
         <div>
-          <h1>Personal Care</h1>
+          <h1>Covid Essentials</h1>
           <div>
             <span>Sort By :</span>
             <FormControl sx={{ minWidth: 260 }} size="small">
               <Select
                 value={sortVal}
-                onChange={handleSortChange}
+                onChange={(e) => setSortVal(e.target.value)}
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
               >
                 <MenuItem value="">Popularity</MenuItem>
                 <MenuItem value="l2h">Price low to high</MenuItem>
-                <MenuItem value="h2l">Price low to high</MenuItem>
+                <MenuItem value="h2l">Price high to low</MenuItem>
                 <MenuItem value="dis">Discount</MenuItem>
               </Select>
             </FormControl>
           </div>
         </div>
         <div>
-          {/* {productData.map((el,index)=>{
-            return <ProductCard key={index} {...el}/>
-          })} */}
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {productData.length > 0
+            ? productData.map((el, index) => {
+                return <ProductCard key={index} {...el} />;
+              })
+            : products.map((el, index) => {
+                return <ProductCard key={index} {...el} />;
+              })}
         </div>
       </div>
     </div>
