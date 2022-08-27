@@ -4,19 +4,33 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import { useDispatch, useSelector } from "react-redux";
+import { cartPrice, removeFromCart } from "../../../Redux/Cart/action";
 
 export const SingleCartCard = (el) => {
-  const [age, setAge] = useState("");
+  const [qty, setQty] = useState(1);
   const [discount, setDiscount] = useState("");
+  const { cart } = useSelector((store) => store.cart);
+  const dispatch = useDispatch();
   useEffect(() => {
+    let cartTotal = qty * el.newPrice;
+    let cartDiscount = qty * el.originalPrice;
+    cartPrice(dispatch, cartTotal, cartDiscount);
     const discountPrice = el.originalPrice - el.newPrice;
     const discountPercent = (discountPrice / el.originalPrice) * 100;
     setDiscount(discountPercent.toFixed(1));
-  }, []);
+  }, [qty]);
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleDelete = () => {
+    removeFromCart(cart, dispatch, el._id);
   };
+  const handleChange = (e) => {
+    setQty(e.target.value);
+    let cartTotal = qty * el.newPrice;
+    let cartDiscount = qty * el.originalPrice;
+    cartPrice(dispatch, cartTotal, cartDiscount);
+  };
+
   return (
     <div className={styles.singleCartWrapper}>
       <div className={styles.singleCartImgDiv}>
@@ -26,7 +40,11 @@ export const SingleCartCard = (el) => {
         <div className={styles.singleCartTitle}>
           <p>{el.desc}</p>
           <div className={styles.deleteIcon}>
-            <RiDeleteBin6Line fontSize="20px" color="#4f585e" />
+            <RiDeleteBin6Line
+              fontSize="20px"
+              color="#4f585e"
+              onClick={handleDelete}
+            />
           </div>
         </div>
         <p className={styles.companyName}>By {el.company}</p>
@@ -34,26 +52,26 @@ export const SingleCartCard = (el) => {
           <div>
             <FormControl sx={{ m: 1, minWidth: 90 }} size="small">
               <Select
-                value={age}
+                value={qty}
                 onChange={handleChange}
                 displayEmpty
                 inputProps={{ "aria-label": "Without label" }}
               >
-                <MenuItem value="">Qty 1</MenuItem>
-                <MenuItem value={10}>Qty 2</MenuItem>
-                <MenuItem value={20}>Qty 3</MenuItem>
-                <MenuItem value={30}>Qty 4</MenuItem>
+                <MenuItem value={1}>Qty 1</MenuItem>
+                <MenuItem value={2}>Qty 2</MenuItem>
+                <MenuItem value={3}>Qty 3</MenuItem>
+                <MenuItem value={4}>Qty 4</MenuItem>
               </Select>
             </FormControl>
           </div>
           <div>
             <div>
               <p style={{ textDecoration: "line-through" }}>
-                ₹{el.originalPrice}*
+                ₹{el.originalPrice * qty}*
               </p>
               <p style={{ color: "#f98b8d" }}>{discount}% OFF</p>
             </div>
-            <p>₹{el.newPrice}*</p>
+            <p>₹{el.newPrice * qty}*</p>
           </div>
         </div>
         <p className={styles.deliveryTime}>
