@@ -54,8 +54,8 @@
   /* border: 1px solid red;   */
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 80%;
+  /* justify-content: space-between; */
+  width: 85%;
   margin-bottom: -6%;
 }
 
@@ -70,4 +70,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5%;
 }

@@ -67,11 +67,11 @@ export const SingleCartCard = (el) => {
           <div>
             <div>
               <p style={{ textDecoration: "line-through" }}>
-                ₹{el.originalPrice * qty}*
+                ₹{el.originalPrice.toFixed(2) * qty}*
               </p>
               <p style={{ color: "#f98b8d" }}>{discount}% OFF</p>
             </div>
-            <p>₹{el.newPrice * qty}*</p>
+            <p>₹{el.newPrice.toFixed(2) * qty}*</p>
           </div>
         </div>
         <p className={styles.deliveryTime}>

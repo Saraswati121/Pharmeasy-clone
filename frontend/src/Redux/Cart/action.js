@@ -4,8 +4,8 @@ export const ADDTOCART = "ADDTOCART";
 export const REMOVEFROMCART = "REMOVEFROMCART";
 export const CARTPRICE = "CARTPRICE";
 
-export const addToCart = () => {
-  // dispatch({type:ADDTOCART,payload:el})
+export const addToCart = (dispatch,el) => {
+  dispatch({type:ADDTOCART,payload:el})
 };
 
 export const removeFromCart = (cart, dispatch, id) => {

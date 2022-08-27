@@ -1,26 +1,19 @@
 /* eslint-disable no-lone-blocks */
-import React, { useState } from "react";
+import React from "react";
 import styles from "./cart.module.css";
 import { FaGooglePlay } from "react-icons/fa";
 import { AiFillApple, AiOutlineSearch } from "react-icons/ai";
 import { FiChevronRight } from "react-icons/fi";
 import { SingleCartCard } from "./SingleCartCard/SingleCartCard";
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 export const Cart = () => {
-  // const [cutPrice, setCutPrice] = useState(0);
-  // const [totalPrice, setTotalPrice] = useState(0);
-  const { cart, subtotal, discountTotal } = useSelector((store) => store.cart);
+  let { cart, subtotal, discountTotal } = useSelector((store) => store.cart);
 
-  // useEffect(() => {
-  //   if (cart) {
-  //     for (let i = 0; i < cart.length; i++) {
-  //       setTotalPrice(totalPrice + cart[i].newPrice);
-  //       setCutPrice(cutPrice + cart[i].originalPrice);
-  //     }
-  //   }
-  // }, []);
+  if (subtotal) {
+    subtotal = subtotal.toFixed(2);
+    discountTotal = discountTotal.toFixed(2);
+  }
 
   return (
     <>
