@@ -1,11 +1,12 @@
 import { productActions } from "./action";
 
 const initState = {
-  isLoading: true,
-  products: [],
-  individualProduct: null,
-  isError: false,
-};
+    isLoading: true,
+    products: [],
+    individualProduct: "",
+    isError: false,
+}
+
 
 export const ProductsReducer = (state = initState, action) => {
   switch (action.type) {

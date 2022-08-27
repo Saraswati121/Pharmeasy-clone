@@ -16,6 +16,7 @@ app.use("/category", CategoryController);
 app.use("/products", ProductController);
 app.use("/getotp", OtpController);
 
+
 const OTP = require("./src/model/otp.model");
 const nodemailer = require("nodemailer");
 const { readFileSync } = require("fs");

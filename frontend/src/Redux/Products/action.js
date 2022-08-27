@@ -21,24 +21,7 @@ export const getProducts = (dispatch) => {
 
 // Individual Product
 
-export const getIndividualProducts =
-  ({ id }) =>
-  (dispatch, getState) => {
+export const getIndividualProducts = (dispatch, el) => {
     dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_LOADING });
-
-    axios({
-      url: `https://localhost:8080/products/${id}`,
-      method: "GET",
-      params: {},
-    })
-      .then((res) => {
-        console.log("res:", res);
-        dispatch({
-          type: productActions.GET_INDIVIDUALPRODUCT_SUCCESS,
-          payload: res.data,
-        });
-      })
-      .catch((err) => {
-        dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_ERROR });
-      });
-  };
+    dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_SUCCESS, payload: el })
+}
