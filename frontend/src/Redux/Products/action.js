@@ -18,7 +18,7 @@ export const getProducts = () => (dispatch) => {
     dispatch({ type: productActions.GET_PRODUCT_LOADING });
 
     axios({
-        url: "https://localhost:8080/products",
+        url: "http://localhost:8080/product",
         method: 'GET',
         params: {}
     }).then((res) => {
@@ -32,18 +32,11 @@ export const getProducts = () => (dispatch) => {
 
 // Individual Product
 
-export const getIndividualProducts = ({ id }) => (dispatch, getState) => {
+export const getIndividualProducts = (dispatch, el) => {
+    // console.log(id)
 
     dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_LOADING });
+    dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_SUCCESS, payload: el })
 
-    axios({
-        url: `https://localhost:8080/products/${id}`,
-        method: 'GET',
-        params: {}
-    }).then((res) => {
-        console.log('res:', res)
-        dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_SUCCESS, payload: res.data });
-    }).catch((err) => {
-        dispatch({ type: productActions.GET_INDIVIDUALPRODUCT_ERROR })
-    })
+    // axios.get(`http://localhost:8080/product/${id}`).then(({ data }) =>)).catch((err)=>console.log(err))
 }
