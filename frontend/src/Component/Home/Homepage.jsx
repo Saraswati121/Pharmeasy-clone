@@ -14,10 +14,15 @@ import Featurebrand from './Featurebrand';
 import Offer from './Offer';
 import Payment from './Payment';
 import Concern from './Concern';
+import Search from './Search';
+import Description from './../healthcare/Description';
 const Homepage = () => {
   return (
     <div>
         <div className={style.main_container}>
+      
+      
+           <Search/>
           <Firstpart/>
           <Carousal/>
           <Shop/>
@@ -32,6 +37,8 @@ const Homepage = () => {
           <Featurebrand/>
           <Offer/>
           <Customer/>
+          <Description/>
+
         </div>
     </div>
   )
