@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./singlecartcard.module.css";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
-export const SingleCartCard = () => {
-  const [age, setAge] = React.useState("");
+export const SingleCartCard = (el) => {
+  const [age, setAge] = useState("");
+  const [discount, setDiscount] = useState("");
+  useEffect(() => {
+    const discountPrice = el.originalPrice - el.newPrice;
+    const discountPercent = (discountPrice / el.originalPrice) * 100;
+    setDiscount(discountPercent.toFixed(1));
+  }, []);
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -14,19 +20,16 @@ export const SingleCartCard = () => {
   return (
     <div className={styles.singleCartWrapper}>
       <div className={styles.singleCartImgDiv}>
-        <img
-          src="https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1654078168.jpg?dim=60x0&dpr=1&q=100"
-          alt="product_img"
-        />
+        <img src={el.img1} alt="product_img" />
       </div>
       <div className={styles.singleCartInfo}>
         <div className={styles.singleCartTitle}>
-          <p>Calcimax Forte Plus Strip of 30 Tablets</p>
+          <p>{el.desc}</p>
           <div className={styles.deleteIcon}>
             <RiDeleteBin6Line fontSize="20px" color="#4f585e" />
           </div>
         </div>
-        <p className={styles.companyName}>By CALCIMAX FORTE PLUS</p>
+        <p className={styles.companyName}>By {el.company}</p>
         <div className={styles.singleCartQty}>
           <div>
             <FormControl sx={{ m: 1, minWidth: 90 }} size="small">
@@ -45,10 +48,12 @@ export const SingleCartCard = () => {
           </div>
           <div>
             <div>
-              <p style={{ textDecoration: "line-through" }}>₹541.80*</p>
-              <p style={{ color: "#f98b8d" }}>20% OFF</p>
+              <p style={{ textDecoration: "line-through" }}>
+                ₹{el.originalPrice}*
+              </p>
+              <p style={{ color: "#f98b8d" }}>{discount}% OFF</p>
             </div>
-            <p>₹432.80*</p>
+            <p>₹{el.newPrice}*</p>
           </div>
         </div>
         <p className={styles.deliveryTime}>
