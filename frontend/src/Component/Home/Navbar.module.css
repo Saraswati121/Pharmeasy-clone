@@ -1,11 +1,20 @@
-.navbar {
+.main_navbar{
   border: 1px solid red;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 8vh;
+  z-index: -1;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 9vh;
+  background-color: rgba(234, 228, 239, 0.134);
  
 }
 .navbar_part {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   box-sizing: border-box;
   height: 100%;
   width: 94%;
@@ -17,7 +26,7 @@
  
 }
 .navbar_part1 {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 100%;
   width: 30%;
   display: flex;
@@ -33,7 +42,16 @@
   left: 10px;
 }
 .logo_mumbai {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
+  font-size: 13px;
+  padding-left: 20px;
+  margin-top: 5px;
+  color:grey;
+}
+.logo_mumbai >div> p{
+  font-size: 16px;
+  margin-top: 5px;
+  color:black;
 }
 /* .icons{
     border:1px dashed red;
@@ -58,16 +76,47 @@
 }
 .select {
   border: none;
+  background: none;
 }
+
 .logo_part {
   width: 20%;
   /* border:1px solid red; */
 }
 .text_part {
-  width: 70%;
+  width: 80%;
   /* border:1px solid red; */
   margin-top: 5px;
 }
+.text_part a {
+text-decoration: none;
+color:black;
+}
 .logo_part_background {
   background-color: rgb(238, 244, 255);
+}
+.small_nav{
+  /* border:2px solid blue; */
+  height:40px;
+  background-color: rgba(170, 232, 233, 0.259);
+  
+}
+.small_navv{
+  /* border:2px solid blue; */
+  width:60%;
+  margin:auto;
+  display:flex;
+  align-items: center;
+
+
+  
+}
+.link{
+  text-decoration:none;
+  gap:20px;
+  margin:10px 20px;
+  color:black
+}
+.link:hover{
+  text-decoration: underline;
 }

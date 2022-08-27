@@ -53,7 +53,7 @@ function NextArrow(props) {
 const Featurebrand = () => {
     const settings = {
         infinite: true,
-        dots: true,
+        dots: false,
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: true,

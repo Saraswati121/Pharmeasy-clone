@@ -50,16 +50,16 @@ function PrevArrow(props) {
 const Offer = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     arrows: true,
     focusOnSelect: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     responsive:[
       {
         breakpoint: 480,

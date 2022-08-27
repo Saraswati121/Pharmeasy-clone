@@ -13,6 +13,7 @@ import Labtest from './Labtest';
 import Featurebrand from './Featurebrand';
 import Offer from './Offer';
 import Payment from './Payment';
+import Concern from './Concern';
 const Homepage = () => {
   return (
     <div>
@@ -25,8 +26,9 @@ const Homepage = () => {
           <Trending/>
           <Choose/>
           <Sliderr/>
-          <Payment/>
+          <Concern/>
           <Health/>
+          <Payment/>
           <Featurebrand/>
           <Offer/>
           <Customer/>

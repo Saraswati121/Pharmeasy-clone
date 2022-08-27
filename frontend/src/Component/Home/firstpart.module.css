@@ -4,7 +4,7 @@
     /* border:1px dashed blue; */
     display:flex;
     justify-content: space-evenly;
-    margin: 30px auto;
+    margin: 150px auto 0 auto;
 }
 .box{
     width:10%;
