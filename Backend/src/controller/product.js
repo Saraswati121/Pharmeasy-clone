@@ -28,7 +28,7 @@ router.post("/", async (req, res) => {
 
 router.get('/:id', async(req,res)=>{
 
-    let {id} = req.params
+    let {id} = req.params;
    
    const data = await ProductDetails.findById(id).lean().exec()
    console.log('data:', data)

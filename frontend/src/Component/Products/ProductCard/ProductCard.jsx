@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { getIndividualProducts } from "../../../Redux/Products/action";
 import styles from "./productcard.module.css";
 
 const el = {
@@ -22,9 +25,11 @@ export const ProductCard = () => {
   // const {individualProduct} = useSelector();
   // const dispatch = useDispatch();
   const [discount, setDiscount] = useState("");
-
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const handleClick = () => {
-    // getIndividualProducts(dispatch,el);
+    getIndividualProducts(dispatch, el);
+    navigate("/products/single")
   };
 
   useEffect(() => {

@@ -22,18 +22,34 @@ const IndividualProduct = () => {
   const [data, setData] = useState()
   const [showImg, setShowImg] = useState();
 
-  useEffect(() => {
-    dispatch(getIndividualProducts({ id: id }))
-  }, [dispatch, id])
-  
+  // useEffect(() => {
+  //   getIndividualProducts(dispatch,id);
+  // }, [dispatch, id])
+
   console.log('data:', data)
+
+  // const individualProduct = {
+  //   desc: "Bpl Smart Oxy Finger Tip Pulse Black Oximeter (Black)",
+  //   company: "BPL",
+  //   img1: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-2-1654234561.jpg",
+  //   img2: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-3-1654234561.jpg",
+  //   img3: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-6.1-1641788519.jpg",
+  //   img4: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-6.2-1641788512.jpg",
+  //   img5: "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-6.3-1641788516.jpg",
+  //   ratings: 294,
+  //   newPrice: 1080,
+  //   originalPrice: 3600,
+  //   offer: 70,
+  //   about:"The BPL Pulse Oximeter is used to measure your pulse rate and oxygen levels in the blood, and it comes in a small, easy-to-use form. Pulse oximeters are used in many medical cases mostly relating to lungs and breathing issues, for example during or after surgery, to check how the lung treatments are progressing, to monitor the body's ability to handle physical activity, to determine whether a person requires a ventilator if their lungs aren’t providing enough oxygen and many other similar situations. The BPL Oximeter helps people regularly check and monitor their blood oxygen levels from home, in case they are not receiving enough oxygen through regular breathing. It is often recommended to patients who have had heart attacks, heart failures or currently have anaemia, COPD, Lung cancer, Asthma or Pneumonia."
+  // }
 
   const individualProduct = useSelector((store) => store.products.individualProduct);
   console.log('individualProduct:', individualProduct)
   useEffect(() => {
     setData(individualProduct)
     setShowImg(individualProduct?.img1)
-  }, [dispatch, individualProduct])
+  }, [])
+  // }, [dispatch, individualProduct])
 
 
   return (
@@ -42,7 +58,7 @@ const IndividualProduct = () => {
         <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 30, fontWeight: 600, color: "green" }}>Loading...</p>
       }
       {error &&
-        <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 25, fontWeight: 600,color:"red" }}>Something went wrong</p>
+        <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 25, fontWeight: 600, color: "red" }}>Something went wrong</p>
       }
       {!loading && !error &&
         <Box>
