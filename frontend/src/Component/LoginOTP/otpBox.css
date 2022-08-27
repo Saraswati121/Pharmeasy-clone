@@ -1,0 +1,82 @@
+* {
+    font-family: Open Sans, sans-serif !important;
+  }
+  
+  body {
+    width: 30%;
+    margin-left: 15px;
+  }
+  .lohead {
+    width: 90%;
+    height: 90px;
+    background-color: rgb(16, 132, 126);
+  }
+  .head{
+    background-color: rgb(16, 132, 126);
+    height: 95px;
+  }
+  .head > img {
+    width: 39%;
+    padding-top: 25px;
+    display: flex;
+    background-color: rgb(16, 132, 126);
+    height: 45px;
+    padding-left: 4%;
+  }
+  .headright > img {
+    margin-left: 250px;
+    height: 70px;
+    margin-top: -80px;
+    width: 130px;
+    float: left;
+  }
+  .login {
+    font-weight: bold;
+   text-align: left;
+    font-size: 15px;
+    color: 
+    #525b61;
+  }
+  
+  .go {
+    margin-top: 20px;
+    width: 84%;
+    padding: 17px 8px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border: none;
+  }
+ 
+  .foot {
+    margin-left: 23px;
+    font-size: 13px;
+    color: rgb(105, 97, 97);
+    width: 80%;
+  }
+  .foot > a {
+    color: teal;
+    font-size: 14px;
+  }
+  .otpInput{
+    width:29px;
+    height:20px;
+    margin-right: 40px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#ip{
+    margin-left: 78px;
+}
+ #main{
+ width: 30%;
+ text-align: center;
+  position: absolute;
+  right: 6px;
+} 
