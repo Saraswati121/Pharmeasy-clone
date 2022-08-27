@@ -17,19 +17,19 @@ const IndividualProduct = () => {
   const loading = useSelector((store) => store.products.isLoading)
   const error = useSelector((store) => store.products.isError)
   const { id } = useParams();
+  console.log('id:', id)
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getIndividualProducts({ id: id }))
-  }, [dispatch, id])
   const [data, setData] = useState()
-  console.log('data:', data)
   const [showImg, setShowImg] = useState();
 
   const individualProduct = useSelector((store) => store.products.individualProduct);
+  console.log('individualProduct:', individualProduct)
   useEffect(() => {
     setData(individualProduct)
+    console.log('data:', data)
     setShowImg(individualProduct?.img1)
-  }, [dispatch, individualProduct])
+  }, [])
+  // }, [dispatch, individualProduct])
 
 
   return (
@@ -38,7 +38,7 @@ const IndividualProduct = () => {
         <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 30, fontWeight: 600, color: "green" }}>Loading...</p>
       }
       {error &&
-        <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 25, fontWeight: 600,color:"red" }}>Something went wrong</p>
+        <p style={{ textAlign: "center", alignItems: "center", marginTop: "100px", fontSize: 25, fontWeight: 600, color: "red" }}>Something went wrong</p>
       }
       {!loading && !error &&
         <Box>

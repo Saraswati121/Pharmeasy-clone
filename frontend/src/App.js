@@ -1,12 +1,11 @@
 
-import {AllRoutes} from '../src/Routes/AllRoutes'
-import {Offer} from "../src/Component/Offer/Offer"
+import { AllRoutes } from "./Routes/AllRoutes";
+
 function App() {
   return (
     <div className="App">
-     {/* <AllRoutes/>  */}
-     <Offer/>
-     </div>
+      <AllRoutes />
+    </div>
   );
 }
 
