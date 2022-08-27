@@ -1,8 +1,10 @@
 import React from 'react'
 import "./offer.css";
+// import Navbar from './Navbar';
 
 export const Offer = () => {
   return (
+    // <Navbar/>
     <div className="offer">
      <div id="offercontainer">
       <div id="home">Home<span> PharmEasy Coupon Codes & Offers</span>

@@ -6,7 +6,7 @@ import { AiFillApple, AiOutlineSearch } from "react-icons/ai";
 import { FiChevronRight } from "react-icons/fi";
 import { SingleCartCard } from "./SingleCartCard/SingleCartCard";
 import { useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 export const Cart = () => {
   let { cart, subtotal, discountTotal } = useSelector((store) => store.cart);
 
@@ -44,7 +44,7 @@ export const Cart = () => {
                 style={{ marginRight: "5%", fontWeight: "700" }}
               />
             </div>
-            <div className={styles.deliveryAddressBox}>Proceed to buy</div>
+            <Link to="/payment" className={styles.deliveryAddressBox} style={{textDecoration: "none"}}>Proceed to buy</Link>
             <div className={styles.orderSummary}>
               <p>Order Summary</p>
               <div>

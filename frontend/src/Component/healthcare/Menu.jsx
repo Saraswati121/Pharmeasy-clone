@@ -25,7 +25,7 @@ const Menu = () => {
                         transition="all 0.3s ease"
                         _hover={{ boxShadow: "#16876e 0px 0px 5px 2px" }}
                     >
-                        <Link to="allproducts">
+                        <Link to="/products">
                             <Flex h="112px" w="325px" p=" 20px">
                                 <Flex w="28%">
                                     <Image w="90%" src={e.img} />

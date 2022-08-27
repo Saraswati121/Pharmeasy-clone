@@ -3,14 +3,14 @@ import styles from "./Navbar.module.css";
 import { Link } from 'react-router-dom';
 
 let data=[
-  {name:"Medicine",link:"/products"},
-  {name:"Lab Tests",link:"/"},
-  {name:"HealthCare",link:"/"},
-  {name:"Health Blogs",link:"/"},
-  {name:"PLUS",link:"/"},
-  {name:"Offers",link:"/"},
-  {name:"Surggeries",link:"/"},
-  {name:"Value Stores",link:"/"},
+  {name:"Medicine",link:"/healthcare"},
+  {name:"Lab Tests",link:"/healthcare"},
+  {name:"HealthCare",link:"/healthcare"},
+  {name:"Health Blogs",link:"/healthcare"},
+  {name:"PLUS",link:"/healthcare"},
+  {name:"Offers",link:"/offer"},
+  {name:"Surggeries",link:"/healthcare"},
+  {name:"Value Stores",link:"/healthcare"},
 ]
 const Navbar = () => {
   return (
@@ -88,7 +88,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div className={styles.text_part}>Hello,Login</div>
+              <Link to="/OTP" className={styles.text_part} style={{textDecoration: 'none'}}>Hello,Login</Link>
             </div>
             <div>
               <div className={styles.logo_part}>
@@ -124,7 +124,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div className={styles.text_part}>Offers</div>
+              <Link to="/offer" className={styles.text_part} style={{textDecoration: 'none'}}>Offers</Link>
             </div>
             <div>
               <div className={styles.logo_part}>
@@ -152,7 +152,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </div>
-              <div className={styles.text_part}>Cart</div>
+              <Link to="/cart" className={styles.text_part} style={{textDecoration: 'none'}}>Cart</Link>
             </div>
           </div>
         </div>

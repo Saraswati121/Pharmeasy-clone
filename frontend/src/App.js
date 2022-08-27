@@ -1,5 +1,5 @@
 
-import { AllRoutes } from './Routes/AllRoutes';
+import {AllRoutes} from '../src/Routes/AllRoutes'
 
 function App() {
   return (

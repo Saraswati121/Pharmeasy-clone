@@ -8,6 +8,8 @@ import {OTP} from "../Component/LoginOTP/OTP"
 import {OtpBox} from "../Component/LoginOTP/OtpBox"
 
 import { Payment } from "../Component/Payment/Payment";
+import HKCharkra from "../Component/healthcare/HKCharkra";
+import {Offer} from "../Component/Offer/Offer";
 
 
 export const AllRoutes = () => {
@@ -22,7 +24,9 @@ export const AllRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/OTP" element={<OTP />} />
         <Route path="/OtpBox" element={<OtpBox />} />
-        <Route path="/Payment" element={<Payment />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/healthcare" element={<HKCharkra />} />
+        <Route path="/offer" element={<Offer />} />
       </Routes>
     </div>
   );
