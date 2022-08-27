@@ -30,7 +30,8 @@ router.get('/:id', async(req,res)=>{
 
     let {id} = req.params
    
-   const data = await ProductDetails.find({category_id:id}).lean().exec()
+   const data = await ProductDetails.findById(id).lean().exec()
+   console.log('data:', data)
 
     res.status(200).send(data)
 })

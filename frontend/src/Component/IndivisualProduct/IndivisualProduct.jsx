@@ -17,6 +17,7 @@ const IndividualProduct = () => {
   const loading = useSelector((store) => store.products.isLoading)
   const error = useSelector((store) => store.products.isError)
   const { id } = useParams();
+  console.log('id:', id)
   const dispatch = useDispatch();
   const [data, setData] = useState()
   const [showImg, setShowImg] = useState();
