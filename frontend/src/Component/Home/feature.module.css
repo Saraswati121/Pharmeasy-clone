@@ -1,25 +1,17 @@
 .container{
     /* border: 1px dashed pink; */
     width:100%;
-    margin-top: 40px;
+    margin-top: 4%;
 }
 .container_text{
-    margin-left: 30px;
-    font-size: 26px;
+    margin-left: 2.8%;
+    font-size: 1.8rem;
 }
-.sub_container{
-    margin-top: 20px;
-    /* border: 1px dashed greenyellow; */
-    
-  
-}
+
 .image_box{
-    margin:15px;
+    margin:1.5%;
     /* border:1px solid black; */
     height:220px;
-    
-    
-
 }
 .image{
     width:80%;
@@ -35,7 +27,7 @@
 .image img {
     height:100%;
     width:100%;
-    margin: 20px auto 0 auto;
+    margin: 12% auto 0 auto;
     object-fit: cover;
 }
 .text{
@@ -47,5 +39,5 @@
 }
 .text p{
     text-align: center;
-    font-size: 14px;
+    font-size: 1.1rem;
 }

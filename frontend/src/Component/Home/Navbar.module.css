@@ -44,14 +44,14 @@
 }
 .logo_mumbai {
   /* border: 1px solid grey; */
-  font-size: 13px;
-  padding-left: 20px;
-  margin-top: 5px;
+  font-size: 0.8rem;
+  padding-left: 3%;
+  margin-top:1%;
   color:grey;
 }
 .logo_mumbai >div> p{
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 1rem;
+  margin-top: 1%;
   color:black;
 }
 /* .icons{
@@ -66,7 +66,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: 12px;
+  top: 10%;
 }
 .navbar_part2 > div {
   /* border:1px dashed black; */
@@ -87,7 +87,7 @@
 .text_part {
   width: 80%;
   /* border:1px solid red; */
-  margin-top: 5px;
+  margin-top: 4%;
 }
 .text_part a {
 text-decoration: none;
@@ -113,10 +113,11 @@ color:black;
   
 }
 .link{
+  /* border:2px solid blue; */
   text-decoration:none;
-  gap:20px;
-  margin:10px 20px;
-  color:black
+  color:black;
+  margin-left:4%;
+  margin-top: 0.9%;
 }
 .link:hover{
   text-decoration: underline;

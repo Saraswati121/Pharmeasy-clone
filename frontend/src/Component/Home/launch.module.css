@@ -1,23 +1,23 @@
 .container{
     /* border: 1px dashed pink; */
     width:100%;
-    margin-top: 40px;
+    margin-top: 4%;
 }
 .container_text{
-    margin-left: 30px;
+    margin-left: 2%;
     font-size: 26px;
 }
 .container_text2{
-    margin-left: 30px;
+    margin-left: 2%;
+    color:grey;
 }
 .sub_container{
-    margin-top: 20px;
+    margin-top: 2%;
     /* border: 1px dashed greenyellow; */
     
   
 }
 .image_box{
-    margin:15px;
     /* border:1px solid black; */
     height:220px;
 }
