@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './trending.module.css'
+import style from './feature.module.css'
 import Data from './Data.json'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -81,11 +81,11 @@ const Featurebrand = () => {
   return (
     <div>
         <div className={style.container}>
-         <h2 className={style.container_text} >Trending Near You</h2>
+         <h2 className={style.container_text} >Feature Brands</h2>
          <div className={style.sub_container}>
           <Slider {...settings}>
           {
-              Data.trending.map((el)=>(
+              Data.feature_brands.map((el)=>(
                 <div key={el.title} className={style.image_box}>
                   <div className={style.image}>
                   <img src={el.image} alt={el.title} />

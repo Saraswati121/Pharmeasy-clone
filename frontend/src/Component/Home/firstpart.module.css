@@ -4,10 +4,10 @@
     /* border:1px dashed blue; */
     display:flex;
     justify-content: space-evenly;
-    margin:auto;
+    margin: 30px auto;
 }
 .box{
-    width:11%;
+    width:10%;
     /* border:1px solid black; */
     height:100%;
     border-radius: 5px;

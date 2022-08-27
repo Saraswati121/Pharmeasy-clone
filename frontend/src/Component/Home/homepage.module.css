@@ -6,8 +6,10 @@
 }
 .carousal{
     /* border:1px solid green; */
+    height:200px;
     width:50%;
     display: flex;
+
     justify-content: space-around;
     gap:20px;
     margin:30px auto 0 auto;
@@ -15,6 +17,7 @@
 .carousal > img{
     margin:auto;
     width:80%;
+    height:100%;
     border-radius: 10px;
 }
 /* Sliderr */
@@ -57,4 +60,49 @@
 }
 .text{
     margin-left: 30px;;
+}
+.carousal_offers{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin:40px auto 0 auto;
+   
+}
+.carousal_offers > img{
+    margin:auto;
+    width:80%;
+    border-radius: 10px;
+    height:220px;
+
+}
+.parent_container{
+    /* border:2px solid green; */
+    height:320px;
+    margin-top:40px;
+    background-color: rgba(160, 232, 227, 0.177);
+}
+
+/* Payment */
+
+.carousal_payment{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    margin:0 auto 0 auto;
+   
+}
+.carousal_payment > img{
+    margin:auto;
+    width:80%;
+    border-radius: 10px;
+    height:100px;
+
+}
+.parent_container_payment{
+    /* border:2px solid green; */
+    height:200px;
+    margin-top:40px;
+    /* background-color: rgba(160, 232, 227, 0.177); */
 }

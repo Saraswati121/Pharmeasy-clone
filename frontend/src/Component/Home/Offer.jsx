@@ -78,11 +78,11 @@ const Offer = () => {
   return (
     <div>
         <div className={style.parent_container}>
-            <h1 className={style.text}>Lab Tests by Health Concern</h1>
+           
         <Slider {...settings}>
             
-            {Data.lab_test.map((el)=>(
-              <div className={style.carousal_health}>
+            {Data.offers.map((el)=>(
+              <div className={style.carousal_offers}>
                 <img src={el.image} />
               </div>
             ))}
