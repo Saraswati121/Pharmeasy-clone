@@ -1,13 +1,17 @@
 const express = require('express');
 const connect = require('./src/config/db')
+const cors = require('cors')
 const UserRoute = require("./src/controller/auth")
 const CategoryController = require("./src/controller/category")
 const ProductController = require("./src/controller/product")
 const OtpController = require("./src/controller/otp.controller")
 const app = express();
 
+
+app.use(cors());
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
+
 
 app.use("/user", UserRoute)
 app.use("/category",CategoryController )
@@ -19,8 +23,8 @@ const nodemailer= require("nodemailer")
 const { readFileSync} =require("fs")
 const hbs= require("handlebars")
 
-const EMAIL= "riley33@ethereal.email"
-const PASSWORD= "s1msRvR8TCADTGSjPH"
+const EMAIL= "marisa.armstrong@ethereal.email"
+const PASSWORD= "8r5rpGVErjqxBPGays"
 
 const transport= nodemailer.createTransport({
     host: "smtp.ethereal.email",
@@ -30,10 +34,10 @@ const transport= nodemailer.createTransport({
         pass:PASSWORD
     }
 })
-
+;
 app.post('/getotp', async(req,res)=>{
     const {email}= req.body;
-    const sendOtp= Math.floor(100000 + Math.random() * 900000)
+    const sendOtp= Math.floor(1000 + Math.random() * 9000)
     const template= hbs.compile(readFileSync("./login.hbs","utf-8")) 
 transport.sendMail({
     from:"pharmeasy@gmail.com",
@@ -52,9 +56,6 @@ transport.sendMail({
     return res.send({message:"mail sent succesfully",data})
 })
 })
-
-
-
 
 
 
