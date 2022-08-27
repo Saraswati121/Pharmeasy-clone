@@ -6,7 +6,7 @@ import { Home } from './../Component/Home/Home';
 import IPChakra from "../Component/IndivisualProduct/IPChakra";
 import {OTP} from "../Component/LoginOTP/OTP"
 import {OtpBox} from "../Component/LoginOTP/OtpBox"
-import {Offer} from "../Component/Offer/Offr"
+import { Payment } from "../Component/Payment/Payment";
 
 
 export const AllRoutes = () => {
@@ -21,7 +21,7 @@ export const AllRoutes = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/OTP" element={<OTP />} />
         <Route path="/OtpBox" element={<OtpBox />} />
-        <Route path="/Offer" element={<Offer />} />
+        <Route path="/Payment" element={<Payment />} />
       </Routes>
     </div>
   );

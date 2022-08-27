@@ -29,7 +29,7 @@ const nav = useNavigate();
     }
 
   return (
-    <div id='main'>
+  <div className='main'>
     <OtpHeader/>
     <div className="login">
       <p>ENTER OTP</p>
