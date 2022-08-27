@@ -20,13 +20,14 @@
 .image_box{
     /* border:1px solid black; */
     height:220px;
+    
 }
 .image{
     width:40%;
     /* border: 1px solid rgba(128, 128, 128, 0.203); */
-    margin:auto;
     height:80%;
     border-radius: 5px;
+    margin-left: 10%;
 
 }
 .image img {
