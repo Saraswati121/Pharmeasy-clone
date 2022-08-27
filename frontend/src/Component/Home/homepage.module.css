@@ -6,8 +6,8 @@
 }
 .carousal{
     /* border:1px solid green; */
-    height:200px;
-    width:50%;
+    height:250px;
+    width:250px;
     display: flex;
 
     justify-content: space-around;
@@ -16,7 +16,7 @@
 }
 .carousal > img{
     margin:auto;
-    width:80%;
+    width:90%;
     height:100%;
     border-radius: 10px;
 }

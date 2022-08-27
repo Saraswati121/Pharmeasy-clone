@@ -17,7 +17,6 @@ function NextArrow(props) {
         color: "black",
         height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
         width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
@@ -38,7 +37,6 @@ function PrevArrow(props) {
         color: "black",
         height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
         width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
@@ -50,11 +48,11 @@ function PrevArrow(props) {
 const Payment = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
     focusOnSelect: true,

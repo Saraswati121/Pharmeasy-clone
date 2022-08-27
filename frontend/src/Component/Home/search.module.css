@@ -1,0 +1,42 @@
+.searchbar{
+    height:150px;
+    width:80%;
+    margin: 150px auto 0 auto;
+    /* border: 1px solid grey; */
+}
+.searchbar_one{
+    width:80%;
+    margin:10px auto;
+    padding:10px;
+    font-size: 20px;
+}
+.searchbar_two{
+    border: 1px solid grey;
+    width:80%;
+    margin:auto;
+    padding:5px;
+    display:flex;
+    border-radius: 30px;
+}
+.input_first{
+   width:5%;
+   height:30px;
+   display:block;
+   margin-top: 5px;
+  
+}
+.input_second{
+    width:83%;
+     height:40px;
+     font-size: large;
+     border:none;
+}
+.input_third{
+   width:12%;
+    height:44px;
+    border-radius: 30px;
+    font-size: large;
+    border:none;
+    background-color: teal;
+    color:white;
+}

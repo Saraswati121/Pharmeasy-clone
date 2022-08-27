@@ -17,8 +17,6 @@ function NextArrow(props) {
           display: "block",
           color: "black",
           height: "3rem",
-          marginRight: "1rem",
-          background: "moccasin",
           width: "3rem",
           zIndex: 50,
           borderRadius:"50%"
@@ -38,8 +36,6 @@ function NextArrow(props) {
           display: "block",
           color: "black",
           height: "3rem",
-          marginRight: "1rem",
-          background: "moccasin",
           width: "3rem",
           zIndex: 50,
           borderRadius:"50%"
@@ -53,7 +49,7 @@ function NextArrow(props) {
 const Trending = () => {
     const settings = {
         infinite: true,
-        dots: true,
+        dots: false,
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: true,

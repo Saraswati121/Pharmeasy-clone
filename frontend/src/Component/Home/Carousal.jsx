@@ -15,11 +15,11 @@ function NextArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "black",
-        height: "3rem",
+        color: "white",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "black",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -36,11 +36,11 @@ function PrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "black",
-        height: "3rem",
+        color: "white",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "black",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -51,7 +51,7 @@ function PrevArrow(props) {
 const Carousal = () => {
     const settings = {
         infinite: true,
-        dots: true,
+        dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,

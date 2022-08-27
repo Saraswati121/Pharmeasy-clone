@@ -52,7 +52,7 @@ function PrevArrow(props) {
 const Health = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     lazyLoad: true,

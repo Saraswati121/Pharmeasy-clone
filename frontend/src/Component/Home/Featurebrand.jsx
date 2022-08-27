@@ -16,10 +16,9 @@ function NextArrow(props) {
           ...style,
           display: "block",
           color: "black",
-          height: "3rem",
+          height: "2rem",
           marginRight: "1rem",
-          background: "moccasin",
-          width: "3rem",
+          width: "2rem",
           zIndex: 50,
           borderRadius:"50%"
         }}
@@ -37,10 +36,9 @@ function NextArrow(props) {
           ...style,
           display: "block",
           color: "black",
-          height: "3rem",
+          height: "2rem",
           marginRight: "1rem",
-          background: "moccasin",
-          width: "3rem",
+          width: "2rem",
           zIndex: 50,
           borderRadius:"50%"
         }}

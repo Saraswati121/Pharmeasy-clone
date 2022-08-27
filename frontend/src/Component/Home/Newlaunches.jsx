@@ -51,7 +51,7 @@ function PrevArrow(props) {
 const Newlaunches = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     lazyLoad: true,
