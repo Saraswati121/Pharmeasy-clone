@@ -30,7 +30,7 @@ const url= "http://localhost:8080"
 
   }
   return (
-    <div id='opin'>
+    <div className='main'>
       <OtpHeader/>
     <div className="login">
       <p>Quick Login /Register</p>

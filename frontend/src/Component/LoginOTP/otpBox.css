@@ -6,6 +6,15 @@
     width: 30%;
     margin-left: 15px;
   } */
+
+  .main {
+    width: 30%;
+    margin-left: 15px;
+    text-align: center;
+   position: absolute;
+   right: 6px;
+  }
+
   .lohead {
     width: 90%;
     height: 90px;
@@ -74,9 +83,3 @@
 #ip{
     margin-left: 78px;
 }
- #main{
- width: 30%;
- text-align: center;
-  position: absolute;
-  right: 6px;
-} 
