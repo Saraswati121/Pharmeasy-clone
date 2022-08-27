@@ -50,7 +50,7 @@ function PrevArrow(props) {
 const Sliderr = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     lazyLoad: true,
@@ -63,15 +63,15 @@ const Sliderr = () => {
     responsive:[
       {
         breakpoint: 480,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
     ]
   };
@@ -80,7 +80,7 @@ const Sliderr = () => {
         <Slider {...settings}>
             
             {Data.slide_images.map((el)=>(
-              <div className={style.carousal_second}>
+              <div className={style.carousal_second} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}

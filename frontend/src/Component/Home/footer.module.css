@@ -1,8 +1,8 @@
 .container {
     background-color: #f4f7fb;
-    padding: 40px;
+    padding: 4%;
     width:90%;
-    margin:50px auto 0 auto;
+    margin:auto;
 
   }
   
@@ -10,17 +10,17 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 0 5px;
-    margin-bottom: 30px;
+    padding: 0 0.5rem;
+    margin-bottom: 2rem;
   }
   
   .columns_container > div > div {
-    font-size: 17px;
-    margin: 10px 0px;
+    font-size: 1rem;
+    margin: 0.8rem 0px;
   }
   
   .columns_container > div > div > div {
-    margin: 10px 0px;
+    margin: 0.8rem 0px;
   }
   
   .columns_container a {
@@ -30,12 +30,12 @@
   
   .social_media {
     display: flex;
-    gap: 25px;
+    gap: 2rem;
   }
   
   .social_media img {
     width: 40px;
-    height: 40px;
+    height:40px;
   }
   
   .payment_partners_container {
@@ -45,7 +45,7 @@
   
   .payment_partners {
     display: flex;
-    gap: 25px;
+    gap: 1.5rem;
   }
   
   .payment_partners img {
@@ -54,6 +54,11 @@
   
   .container h4 {
     color: #4f585e;
-    font-size: 17px;
-    margin: 16px 0px;
+    font-size:1.3rem;
+    margin: 1rem 0px;
+  }
+  @media (min-width: 250px) and (max-width:450px){
+    .container {
+      width:100%;
+    }
   }

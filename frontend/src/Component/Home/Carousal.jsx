@@ -15,11 +15,11 @@ function NextArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "black",
-        height: "3rem",
+        color: "white",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "black",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -36,11 +36,11 @@ function PrevArrow(props) {
       style={{
         ...style,
         display: "block",
-        color: "black",
-        height: "3rem",
+        color: "white",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "black",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -51,8 +51,8 @@ function PrevArrow(props) {
 const Carousal = () => {
     const settings = {
         infinite: true,
-        dots: true,
-        slidesToShow: 2,
+        dots: false,
+        slidesToShow: 3,
         slidesToScroll: 1,
         lazyLoad: true,
         autoplay: true,
@@ -64,15 +64,15 @@ const Carousal = () => {
         responsive:[
           {
             breakpoint: 480,
-            settings: { slidesToShow: 1, slidesToScroll: 1 },
+            settings: { slidesToShow: 2, slidesToScroll: 1 },
           },
           {
             breakpoint: 768,
-            settings: { slidesToShow: 1, slidesToScroll: 1 },
+            settings: { slidesToShow: 3, slidesToScroll: 1 },
           },
           {
             breakpoint: 1024,
-            settings: { slidesToShow: 2, slidesToScroll: 1 },
+            settings: { slidesToShow: 3, slidesToScroll: 1 },
           },
         ]
       };
@@ -81,7 +81,7 @@ const Carousal = () => {
         <Slider {...settings}>
             
                     {Data.first_corausal.map((el)=>(
-                      <div className={style.carousal}>
+                      <div className={style.carousal} key={el.image}>
                         <img src={el.image} />
                       </div>
                     ))}

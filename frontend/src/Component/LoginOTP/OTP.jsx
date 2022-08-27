@@ -5,7 +5,7 @@ import axios from "axios"
 import {OtpHeader} from "../LoginOTP/OtpHeader";
 
 
-const url= "http://localhost:8080"
+const url= "https://pharmaeasy.herokuapp.com/"
   export const OTP = () => {
  
   const [email,setEmail]=useState("")
@@ -21,8 +21,9 @@ const url= "http://localhost:8080"
     localStorage.setItem("email",JSON.stringify(email))
     try{
       const mails= await axios.post(`${url}/getotp`,{email})
+      // console.log(mails)
       nav("/OtpBox")
-      console.log(mails)
+     
     }
     catch(err){
       console.log (err)

@@ -10,10 +10,19 @@ import { Choose } from './Choose';
 import Health from './Health';
 import Sliderr from './Sliderr';
 import Labtest from './Labtest';
+import Featurebrand from './Featurebrand';
+import Offer from './Offer';
+import Payment from './Payment';
+import Concern from './Concern';
+import Search from './Search';
+import {Description} from './Description';
 const Homepage = () => {
   return (
     <div>
         <div className={style.main_container}>
+      
+      
+           <Search/>
           <Firstpart/>
           <Carousal/>
           <Shop/>
@@ -22,8 +31,14 @@ const Homepage = () => {
           <Trending/>
           <Choose/>
           <Sliderr/>
+          <Concern/>
           <Health/>
+          <Payment/>
+          <Featurebrand/>
+          <Offer/>
           <Customer/>
+          <Description/>
+
         </div>
     </div>
   )

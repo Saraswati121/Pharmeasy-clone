@@ -1,20 +1,20 @@
 .container{
     /* border: 1px dashed pink; */
     width:100%;
-    margin-top: 40px;
+    margin-top: 4%;
 }
 .container_text{
-    margin-left: 30px;
-    font-size: 26px;
+    margin-left: 3%;
+    font-size: 1.5rem;
 }
 .sub_container{
-    margin-top: 20px;
+    margin-top: 2%;
     /* border: 1px dashed greenyellow; */
     
   
 }
 .image_box{
-    margin:15px;
+    margin:1.5%;
     /* border:1px solid black; */
     height:220px;
     
@@ -27,13 +27,13 @@
     margin:auto;
     height:70%;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
 
 }
 .image img {
     height:70%;
     width:80%;
-    margin: 20px auto 0 auto;
+    margin: 12% auto 0 auto;
     object-fit: cover;
 }
 .text{
@@ -45,5 +45,5 @@
 }
 .text p{
     text-align: center;
-    font-size: 14px;
+    font-size: 0.9rem;
 }

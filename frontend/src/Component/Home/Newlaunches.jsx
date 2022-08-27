@@ -51,7 +51,7 @@ function PrevArrow(props) {
 const Newlaunches = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     lazyLoad: true,
@@ -64,11 +64,11 @@ const Newlaunches = () => {
     responsive: [
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 3, slidesToScroll: 1 },
+        settings: { slidesToShow: 6, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
@@ -90,6 +90,8 @@ const Newlaunches = () => {
                 </div>
                 <div className={style.text}>
                   <p>{el.title}</p>
+                  <p className={style.mrp}>MRP ₹{el.dis_price}</p>
+                  <p>₹{el.price}   <span>{el.discount}</span></p>
                 </div>
               </div>
             ))}

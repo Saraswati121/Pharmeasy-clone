@@ -33,7 +33,7 @@ const Choose = () => {
       <div className={styles.flexBox}>
         {db.map((el) => {
           return (
-            <div>
+            <div key={el.title}>
               <img style={{ marginBottom: "30px" }} src={el.img} alt="" />
               <Heading
                 size="md"
