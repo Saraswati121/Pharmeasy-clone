@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './firstpart.module.css'
 import Data from './Data.json'
+import { Link } from 'react-router-dom';
 
 const Firstpart = () => {
   return (
@@ -9,7 +10,7 @@ const Firstpart = () => {
           {Data.image_data.map((el)=>(
             <div className={style.box} key={el.name}>
                 <div className={style.image_box}>
-                    <img src={el.image} alt="" />
+                    <Link to={el.link}><img src={el.image} alt="" /></Link>
                 </div>
                 <div className={style.text_box}>
                     <p>{el.name}</p>

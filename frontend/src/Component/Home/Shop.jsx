@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,10 +18,10 @@ function NextArrow(props) {
         ...style,
         display: "block",
         color: "black",
-        height: "3rem",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "white",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -38,10 +39,10 @@ function PrevArrow(props) {
         ...style,
         display: "block",
         color: "black",
-        height: "3rem",
+        height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
-        width: "3rem",
+        background: "white",
+        width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
       }}
@@ -54,7 +55,7 @@ function PrevArrow(props) {
 const Shop = () => {
   const settings = {
     infinite: true,
-    dots: true,
+    dots: false,
     slidesToShow: 8,
     slidesToScroll: 1,
     lazyLoad: true,
@@ -67,11 +68,11 @@ const Shop = () => {
     responsive:[
       {
         breakpoint: 480,
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 8, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
@@ -89,7 +90,7 @@ const Shop = () => {
               Data.shop_by_category.map((el)=>(
                 <div key={el.title} className={style.image_box}>
                   <div className={style.image}>
-                  <img src={el.image} alt={el.title} />
+                 <Link to={el.link}> <img src={el.image} alt={el.title} /></Link>
                   </div>
                   <div className={style.text}>
                   <p >{el.title}</p>

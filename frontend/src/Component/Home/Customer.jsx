@@ -90,7 +90,21 @@ const Customer = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
+      },
+    ],
   };
   return (
     <div className={styles.container}>
@@ -102,7 +116,7 @@ const Customer = () => {
         <Slider {...settings}>
           {db.map((el) => {
             return (
-              <div className={styles.card}>
+              <div className={styles.card} key={el.name}>
                 <div className={styles.user}>
                   <p>
                     <b>{el.name}</b>

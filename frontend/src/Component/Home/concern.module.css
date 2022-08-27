@@ -4,30 +4,24 @@
     margin-top: 4%;
 }
 .container_text{
-    margin-left: 2%;
-    font-size: 26px;
+    margin-left: 2.3%;
+    font-size: 1.7rem;
 }
 .container_text2{
-    margin-left: 2%;
+    margin-left: 2.3%;
+    font-size: 1rem;
     color:grey;
 }
 .sub_container{
     margin-top: 2%;
     /* border: 1px dashed greenyellow; */
-    
-  
 }
-.image_box{
-    /* border:1px solid black; */
-    height:220px;
-    
-}
+
 .image{
-    width:40%;
+    width:70%;
     /* border: 1px solid rgba(128, 128, 128, 0.203); */
-    height:80%;
-    border-radius: 5px;
-    margin-left: 10%;
+    margin:auto;
+    height:70%;
 
 }
 .image img {
@@ -43,13 +37,5 @@
 }
 
 .text p{
-    text-align:left;
-}
-.text p span{
-    text-align:left;
-    color:red;
-}
-.mrp{
-    text-decoration: line-through;
-    color:grey;
+    text-align: center;
 }

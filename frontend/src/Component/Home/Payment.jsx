@@ -17,7 +17,6 @@ function NextArrow(props) {
         color: "black",
         height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
         width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
@@ -38,7 +37,6 @@ function PrevArrow(props) {
         color: "black",
         height: "2rem",
         marginRight: "1rem",
-        background: "moccasin",
         width: "2rem",
         zIndex: 50,
         borderRadius:"50%"
@@ -47,14 +45,14 @@ function PrevArrow(props) {
     />
   );
 }
-const Labtest = () => {
+const Payment = () => {
   const settings = {
     infinite: true,
     dots: false,
-    slidesToShow: 6,
+    slidesToShow: 3,
     slidesToScroll: 1,
     lazyLoad: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     arrows: true,
     focusOnSelect: true,
@@ -63,26 +61,26 @@ const Labtest = () => {
     responsive:[
       {
         breakpoint: 480,
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 3, slidesToScroll: 1 },
       },
     ]
   };
   return (
     <div>
-        <div className={style.parent_container}>
-            <h1 className={style.text}>Lab Tests by Health Concern</h1>
+        <div className={style.parent_container_payment}>
+            <h1 className={style.text}>Payment Offers</h1>
         <Slider {...settings}>
             
-            {Data.lab_test.map((el)=>(
-              <div className={style.carousal_health} key={el.image}>
+            {Data.paymennt_offers.map((el)=>(
+              <div className={style.carousal_payment} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}
@@ -93,4 +91,4 @@ const Labtest = () => {
   )
 }
 
-export default Labtest
+export default Payment

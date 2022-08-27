@@ -47,42 +47,42 @@ function PrevArrow(props) {
     />
   );
 }
-const Labtest = () => {
+const Offer = () => {
   const settings = {
     infinite: true,
     dots: false,
-    slidesToShow: 6,
+    slidesToShow: 4,
     slidesToScroll: 1,
     lazyLoad: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     arrows: true,
     focusOnSelect: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
     responsive:[
       {
         breakpoint: 480,
-        settings: { slidesToShow: 4, slidesToScroll: 1 },
+        settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
         breakpoint: 768,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 6, slidesToScroll: 1 },
+        settings: { slidesToShow: 4, slidesToScroll: 1 },
       },
     ]
   };
   return (
     <div>
         <div className={style.parent_container}>
-            <h1 className={style.text}>Lab Tests by Health Concern</h1>
+           
         <Slider {...settings}>
             
-            {Data.lab_test.map((el)=>(
-              <div className={style.carousal_health} key={el.image}>
+            {Data.offers.map((el)=>(
+              <div className={style.carousal_offers} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}
@@ -93,4 +93,4 @@ const Labtest = () => {
   )
 }
 
-export default Labtest
+export default Offer
