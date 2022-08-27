@@ -116,7 +116,7 @@ const Customer = () => {
         <Slider {...settings}>
           {db.map((el) => {
             return (
-              <div className={styles.card}>
+              <div className={styles.card} key={el.name}>
                 <div className={styles.user}>
                   <p>
                     <b>{el.name}</b>

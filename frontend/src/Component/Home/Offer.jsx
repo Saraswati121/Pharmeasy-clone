@@ -82,7 +82,7 @@ const Offer = () => {
         <Slider {...settings}>
             
             {Data.offers.map((el)=>(
-              <div className={style.carousal_offers}>
+              <div className={style.carousal_offers} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}

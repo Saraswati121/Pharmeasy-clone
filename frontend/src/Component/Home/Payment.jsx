@@ -80,7 +80,7 @@ const Payment = () => {
         <Slider {...settings}>
             
             {Data.paymennt_offers.map((el)=>(
-              <div className={style.carousal_payment}>
+              <div className={style.carousal_payment} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}

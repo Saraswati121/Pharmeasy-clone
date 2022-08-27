@@ -42,5 +42,13 @@
 }
 
 .text p{
-    text-align: center;
+    text-align:left;
+}
+.text p span{
+    text-align:left;
+    color:red;
+}
+.mrp{
+    text-decoration: line-through;
+    color:grey;
 }

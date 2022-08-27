@@ -80,7 +80,7 @@ const Sliderr = () => {
         <Slider {...settings}>
             
             {Data.slide_images.map((el)=>(
-              <div className={style.carousal_second}>
+              <div className={style.carousal_second} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}

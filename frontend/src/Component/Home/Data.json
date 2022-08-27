@@ -3,42 +3,50 @@
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0",
       "name": "Medicine",
-      "discount": "Upto 50% OFF"
+      "discount": "Upto 50% OFF",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0",
       "name": "LabTest",
-      "discount": "Upto 70% OFF"
+      "discount": "Upto 70% OFF",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0",
       "name": "Health Care",
-      "discount": "Upto 60% OFF"
+      "discount": "Upto 60% OFF",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0",
       "name": "Health Blogs",
-      "discount": ""
+      "discount": "",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0",
       "name": "Plus",
-      "discount": "SAVE 5% EXTRA"
+      "discount": "SAVE 5% EXTRA",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0",
       "name": "Offers",
-      "discount": ""
+      "discount": "",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0",
       "name": "Surgeries",
-      "discount": ""
+      "discount": "",
+      "link":"/"
     },
     {
       "image": "https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0",
       "name": "Value",
-      "discount": "Upto 50% OFF"
+      "discount": "Upto 50% OFF",
+      "link":"/"
     }
   ],
   "first_corausal": [
@@ -132,8 +140,8 @@
     {
       "image": "https://cdn01.pharmeasy.in/dam/products_otc/M80181/colin-glass-and-surface-cleaner-liquid-regular-500ml-pack-of-3-1-1650020382.jpg?dim=1440x0",
       "title": "Colin Glass And Surface Cleaner Liquid, Regular - 500ml",
-      "dis_price": "288.00",
-      "price": "2879.36",
+      "dis_price": "300.00",
+      "price": "291.36",
       "discount": "3% OFF"
     },
     {

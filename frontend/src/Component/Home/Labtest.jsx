@@ -82,7 +82,7 @@ const Labtest = () => {
         <Slider {...settings}>
             
             {Data.lab_test.map((el)=>(
-              <div className={style.carousal_health}>
+              <div className={style.carousal_health} key={el.image}>
                 <img src={el.image} />
               </div>
             ))}

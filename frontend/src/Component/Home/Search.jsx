@@ -1,11 +1,4 @@
-import React from "react";
-import {
-  Input,
-  Stack,
-  InputGroup,
-  InputLeftElement,
-  PhoneIcon,
-} from "@chakra-ui/react";
+
 
 import style from "./search.module.css";
 const Search = () => {
@@ -13,7 +6,7 @@ const Search = () => {
     <div>
       <div className={style.searchbar}>
         <div className={style.searchbar_one}>
-          <div>What are you looking for?</div>
+          <div style={{fontSize:"25px",fontWeight:"bold"}}>What are you looking for?</div>
         </div>
         <div className={style.searchbar_two}>
           <div className={style.input_first}>

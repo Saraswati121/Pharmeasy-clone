@@ -90,6 +90,8 @@ const Newlaunches = () => {
                 </div>
                 <div className={style.text}>
                   <p>{el.title}</p>
+                  <p className={style.mrp}>MRP ₹{el.dis_price}</p>
+                  <p>₹{el.price}   <span>{el.discount}</span></p>
                 </div>
               </div>
             ))}
