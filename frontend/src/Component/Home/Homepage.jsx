@@ -15,7 +15,7 @@ import Offer from './Offer';
 import Payment from './Payment';
 import Concern from './Concern';
 import Search from './Search';
-import Description from './../healthcare/Description';
+import {Description} from './Description';
 const Homepage = () => {
   return (
     <div>
