@@ -22,12 +22,12 @@ const IndividualProduct = () => {
     dispatch(getIndividualProducts({ id: id }))
   }, [dispatch, id])
   const [data, setData] = useState()
-  console.log('data:', data)
   const [showImg, setShowImg] = useState();
-
+  
   const individualProduct = useSelector((store) => store.products.individualProduct);
   useEffect(() => {
     setData(individualProduct)
+    console.log('data:', data)
     setShowImg(individualProduct?.img1)
   }, [dispatch, individualProduct])
 

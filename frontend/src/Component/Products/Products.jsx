@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./products.module.css";
 import { ProductCard } from "./ProductCard/ProductCard";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-// import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../Redux/Products/action";
 
 const subCategoryFilters = [
   "Men Care",
@@ -16,9 +17,14 @@ const subCategoryFilters = [
 const priceFilters = ["Below 99", "100-199", "200-299", "300-399", "400-499"];
 
 export const Products = () => {
-  // const [productData,setProductData] = useState([]);
-  // const { products } = useSelector();
-  // setProductData(products)
+  const [productData, setProductData] = useState([]);
+  const { products } = useSelector((store) => store.products);
+  const dispatch = useDispatch();
+  console.log(products);
+  useEffect(() => {
+    getProducts(dispatch);
+    setProductData(products);
+  }, []);
   const [sortVal, setSortVal] = useState("");
 
   const handleSubCategoryChange = (e) => {
@@ -134,13 +140,13 @@ export const Products = () => {
           </div>
         </div>
         <div>
-          {/* {productData.map((el,index)=>{
+          {products.map((el,index)=>{
             return <ProductCard key={index} {...el}/>
-          })} */}
+          })}
+          {/* <ProductCard />
           <ProductCard />
           <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          <ProductCard /> */}
         </div>
       </div>
     </div>
