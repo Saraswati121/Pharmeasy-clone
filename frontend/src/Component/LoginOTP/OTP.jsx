@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import "./otp.css";
-import { useNavigate } from "react-router-dom";
 import axios from "axios"
-import {OtpHeader} from "../LoginOTP/OtpHeader";
+import { useDispatch } from 'react-redux';
+import { showOtpPage } from '../../Redux/Otp/action';
 
 
-const url= "https://pharmaeasy.herokuapp.com/"
+// const url= "https://pharmaeasy.herokuapp.com"
+const url= "http://localhost:8080"
   export const OTP = () => {
  
   const [email,setEmail]=useState("")
-  const nav = useNavigate();
+
+  const dispatch = useDispatch()
 
   const handleChange=(e)=>{
     const data= e.target.value
@@ -18,11 +20,12 @@ const url= "https://pharmaeasy.herokuapp.com/"
   }
   
   const handleClick= async ()=>{
+    showOtpPage(dispatch)
     localStorage.setItem("email",JSON.stringify(email))
     try{
       const mails= await axios.post(`${url}/getotp`,{email})
-      // console.log(mails)
-      nav("/OtpBox")
+       console.log(mails)
+
      
     }
     catch(err){
