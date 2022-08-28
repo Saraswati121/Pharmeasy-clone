@@ -3,6 +3,7 @@ import { SHOWMAILPAGE, SHOWOTPPAGE } from "./action";
 const initState = {
     showlogin: false,
     showotp: false,
+    modalIsOpen: false
 };
 
 export const cartReducer = (state = initState, { type }) => {
