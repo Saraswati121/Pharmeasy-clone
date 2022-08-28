@@ -9,8 +9,11 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 export const Cart = () => {
   let { cart, subtotal, discountTotal } = useSelector((store) => store.cart);
-
-  if (subtotal) {
+  if (cart) {
+    for (let i = 0; i < cart.length; i++) {
+      subtotal += cart[i].newPrice;
+      discountTotal += cart[i].originalPrice;
+    }
     subtotal = subtotal.toFixed(2);
     discountTotal = discountTotal.toFixed(2);
   }
@@ -21,7 +24,7 @@ export const Cart = () => {
         <div className={styles.cartWithItems}>
           <div className={styles.singleCartItem}>
             <div>
-              <h1>1 Item in Cart</h1>
+              {cart.length===1 ? <h1>1 Item in Cart</h1> : <h1>{cart.length} Items in Cart</h1>}
               <p>Prices are indicative</p>
             </div>
             <div>
@@ -44,7 +47,13 @@ export const Cart = () => {
                 style={{ marginRight: "5%", fontWeight: "700" }}
               />
             </div>
-            <Link to="/payment" className={styles.deliveryAddressBox} style={{textDecoration: "none"}}>Proceed to buy</Link>
+            <Link
+              to="/payment"
+              className={styles.deliveryAddressBox}
+              style={{ textDecoration: "none" }}
+            >
+              Proceed to buy
+            </Link>
             <div className={styles.orderSummary}>
               <p>Order Summary</p>
               <div>
