@@ -23,6 +23,7 @@ import { addToCart } from "../../Redux/Cart/action";
 const IndividualProduct = () => {
   const loading = useSelector((store) => store.products.isLoading);
   const error = useSelector((store) => store.products.isError);
+  const { cart } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
   const [data, setData] = useState();
   const [showImg, setShowImg] = useState();
@@ -71,7 +72,7 @@ const IndividualProduct = () => {
         </p>
       )}
       {!loading && !error && (
-        <Box>
+        <Box marginTop="100px">
           <Flex className="content" justify="space-between">
             <div className="leftInd">
               <Box>
@@ -326,7 +327,7 @@ const IndividualProduct = () => {
             <Box className="right" w="25%" color="#4f585e" textAlign="left">
               <Box className="cartDetails" padding="10px 0">
                 <Text fontSize="16" fontWeight="600" py="30px">
-                  1 Items in Cart
+                  {cart.length} Item(s) in Cart
                 </Text>
                 <Link to="/cart">
                   <Button
