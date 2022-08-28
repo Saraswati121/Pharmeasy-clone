@@ -1,16 +1,17 @@
 import React from 'react';
 import "./otpBox.css";
 import axios from "axios"
-import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
-import {OtpHeader} from "../LoginOTP/OtpHeader"
+import { useDispatch } from "react-redux";
+import { handleModalClose } from '../../Redux/Otp/action';
 
-const url= "https://pharmaeasy.herokuapp.com"
+// const url= "https://pharmaeasy.herokuapp.com"
+const url= "http://localhost:8080"
 export const OtpBox = () => {
 
 const inputRef=useRef([])
 let [otp,setOtp]=useState("")
-const nav = useNavigate();
+const dispatch = useDispatch();
 
     const go = async()=>{
        try{
@@ -20,7 +21,7 @@ const nav = useNavigate();
         let data = {email,otp}
 
         const res= await axios.post(`${url}/getotp/verify`,data)
-        nav("/")
+        handleModalClose(dispatch)
         console.log(res)
        }
        catch(err){
