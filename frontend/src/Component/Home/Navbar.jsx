@@ -9,7 +9,7 @@ let data=[
   {name:"Health Blogs",link:"/healthcare"},
   {name:"PLUS",link:"/healthcare"},
   {name:"Offers",link:"/offer"},
-  {name:"Surggeries",link:"/healthcare"},
+  {name:"Surgeries",link:"/healthcare"},
   {name:"Value Stores",link:"/healthcare"},
 ]
 const Navbar = () => {

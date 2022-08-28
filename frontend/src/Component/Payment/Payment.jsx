@@ -1,7 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./payment.css";
+import { useNavigate } from 'react-router-dom';
 export const Payment = () => {
+  const navigate = useNavigate()
   const { cart } = useSelector((store) => store.cart);
   let cartTotal = 0;
   let cutPrice = 0;
@@ -10,6 +12,10 @@ export const Payment = () => {
         cartTotal += cart[i].newPrice;
         cutPrice += cart[i].originalPrice;
     }
+  }
+  const paymentSuccess=()=>{
+    alert("Payment Succssfully Placed!!")
+    navigate('/')
   }
   return (
     <div className="pay">
@@ -317,7 +323,7 @@ export const Payment = () => {
             <div id="lastone" className="upiselect">
               <div className="upiHeadings">Cash on Delivery</div>
               <div>
-                <input type="radio" />
+                <input type="radio" onChange={paymentSuccess} />
               </div>
             </div>
             <div>
