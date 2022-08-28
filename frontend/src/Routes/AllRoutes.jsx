@@ -10,13 +10,14 @@ import {OtpBox} from "../Component/LoginOTP/OtpBox"
 import { Payment } from "../Component/Payment/Payment";
 import HKCharkra from "../Component/healthcare/HKCharkra";
 import {Offer} from "../Component/Offer/Offer";
-
+import Navbar from "../Component/Home/Navbar";
+import {Footer} from "../Component/Home/Footer";
 
 export const AllRoutes = () => {
   return (
     <div>
       {/* Add routes here only. */}
-
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
@@ -28,6 +29,7 @@ export const AllRoutes = () => {
         <Route path="/healthcare" element={<HKCharkra />} />
         <Route path="/offer" element={<Offer />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

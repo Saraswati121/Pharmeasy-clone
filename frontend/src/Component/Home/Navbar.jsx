@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+
 import {ModalBox} from "./Modal"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 let data=[
   {name:"Medicine",link:"/healthcare"},
@@ -10,10 +12,11 @@ let data=[
   {name:"Health Blogs",link:"/healthcare"},
   {name:"PLUS",link:"/healthcare"},
   {name:"Offers",link:"/offer"},
-  {name:"Surggeries",link:"/healthcare"},
+  {name:"Surgeries",link:"/healthcare"},
   {name:"Value Stores",link:"/healthcare"},
 ]
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className={styles.main_navbar}>
@@ -22,8 +25,10 @@ const Navbar = () => {
           <div className={styles.navbar_part1}>
             <div className={styles.logo}>
               <img
+                onClick={()=>navigate('/')}
                 src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=360x0"
                 alt=""
+                style={{cursor:"pointer"}}
               />
             </div>
             <div className={styles.logo_mumbai}>
