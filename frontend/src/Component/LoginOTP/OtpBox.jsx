@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
 import {OtpHeader} from "../LoginOTP/OtpHeader"
 
-const url= "https://pharmaeasy.herokuapp.com/"
+const url= "https://pharmaeasy.herokuapp.com"
 export const OtpBox = () => {
 
 const inputRef=useRef([])

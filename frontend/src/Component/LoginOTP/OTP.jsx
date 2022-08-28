@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { showOtpPage } from '../../Redux/Otp/action';
 
 
-const url= "https://pharmaeasy.herokuapp.com/"
+const url= "https://pharmaeasy.herokuapp.com"
   export const OTP = () => {
  
   const [email,setEmail]=useState("")
@@ -27,7 +27,7 @@ const url= "https://pharmaeasy.herokuapp.com/"
     try{
       const mails= await axios.post(`${url}/getotp`,{email})
        console.log(mails)
-      nav("/OtpBox")
+
      
     }
     catch(err){
