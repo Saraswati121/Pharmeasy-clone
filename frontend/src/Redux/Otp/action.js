@@ -1,5 +1,6 @@
 export const SHOWMAILPAGE = "SHOWMAILPAGE";
 export const SHOWOTPPAGE = "SHOWOTPPAGE";
+export const CLOSEMODAL = "CLOSEMODAL"
 
 
 export const showLoginPage = (dispatch) => {
@@ -10,3 +11,6 @@ export const showOtpPage = (dispatch) => {
     dispatch({ type: SHOWOTPPAGE })
 }
 
+export const handleModalClose = (dispatch) => {
+    dispatch({type: CLOSEMODAL})
+}

@@ -1,15 +1,17 @@
-import { SHOWMAILPAGE, SHOWOTPPAGE } from "./action";
+import { CLOSEMODAL, SHOWMAILPAGE, SHOWOTPPAGE } from "./action";
 
 const initState = {
     showlogin: false,
     showotp: false,
+    modal: false,
 };
 
-export const cartReducer = (state = initState, { type }) => {
+export const otpReducer = (state = initState, { type }) => {
     switch (type) {
         case SHOWMAILPAGE: {
             return {
                 ...state,
+                modal: true,
                 showlogin:true,
                 showotp:false
             };
@@ -17,8 +19,17 @@ export const cartReducer = (state = initState, { type }) => {
         case SHOWOTPPAGE: {
             return {
                 ...state,
+                modal: true,
                 showlogin: false,
                 showotp: true
+            };
+        }
+        case CLOSEMODAL: {
+            return {
+                ...state,
+                modal: false,
+                showlogin: false,
+                showotp: false
             };
         }
         default: {
