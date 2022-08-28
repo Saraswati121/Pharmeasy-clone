@@ -30,7 +30,7 @@ const nav = useNavigate();
 
   return (
   <div className='main'>
-    <OtpHeader/>
+  
     <div className="login">
       <p>ENTER OTP</p>
     </div>

@@ -6,6 +6,7 @@ import { cartReducer } from "./Cart/cartReducer";
 const rootReducer = combineReducers({
   products: ProductsReducer,
   cart: cartReducer,
+  
 });
 
 export const store = legacy_createStore(rootReducer, applyMiddleware(thunk));

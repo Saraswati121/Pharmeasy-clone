@@ -1,10 +1,12 @@
 import React from 'react'
 import "./offer.css";
-// import Navbar from './Navbar';
+import Navbar from '../Home/Navbar';
 
 export const Offer = () => {
   return (
-    // <Navbar/>
+    <>
+    <Navbar/>
+  
     <div className="offer">
      <div id="offercontainer">
       <div id="home">Home<span> PharmEasy Coupon Codes & Offers</span>
@@ -137,5 +139,6 @@ export const Offer = () => {
         </div> 
         </div>
     </div>
+    </>
   )
 }

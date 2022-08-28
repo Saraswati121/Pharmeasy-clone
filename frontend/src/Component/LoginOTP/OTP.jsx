@@ -32,7 +32,6 @@ const url= "https://pharmaeasy.herokuapp.com/"
   }
   return (
     <div className='main'>
-      <OtpHeader/>
     <div className="login">
       <p>Quick Login /Register</p>
     </div>

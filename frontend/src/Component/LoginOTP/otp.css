@@ -67,9 +67,7 @@
     font-size: 14px;
   }
   .main {
-    width: 30%;
-    margin-left: 15px;
-    text-align: center;
+    width: 100%;
    position: absolute;
    right: 6px;
   }
