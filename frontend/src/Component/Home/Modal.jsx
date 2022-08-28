@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Modal from "react-modal";
 import { OTP } from "../LoginOTP/OTP";
 import { OtpBox } from "../LoginOTP/OtpBox";
+import {handleModalClose, showLoginPage} from "../../Redux/Otp/action"
 import { OtpHeader } from "../LoginOTP/OtpHeader";
 
 export const ModalBox = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
   const [show, setShow] = React.useState(true);
 
-  // const show = useSelector((store)=> store.show)
+
+  const { showlogin , modal} = useSelector((store) => store.otp);
+  const modalIsOpen = modal;
+  const dispatch = useDispatch();
+  // useEffect(() => {
+  //   showLoginPage(dispatch);
+  // }, []);
+
 
   return (
     <div>
@@ -41,7 +49,7 @@ export const ModalBox = () => {
           },
         }}
         isOpen={modalIsOpen}
-        onRequestClose={() => setIsOpen(false)}
+        // onRequestClose={}
         overlayClassName={{
           base: "overlay-base",
           afterOpen: "overlay-after",
@@ -63,7 +71,9 @@ export const ModalBox = () => {
             textAlign: "center",
             cursor: "pointer"
           }}
-          onClick={() => setIsOpen(false)}
+          onClick={()=>{
+            handleModalClose(dispatch)
+          }}
         >
           x
         </div>
@@ -72,7 +82,7 @@ export const ModalBox = () => {
 
           <OtpHeader />
 
-          <div>{show ? <OTP /> : <OtpBox />}</div>
+          <div>{showlogin ? <OTP /> : <OtpBox />}</div>
         </div>
       </Modal>
     </div>
