@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Navbar.module.css";
+
+import {ModalBox} from "./Modal"
 import { Link, useNavigate } from 'react-router-dom';
+
 
 let data=[
   {name:"Medicine",link:"/healthcare"},
@@ -90,8 +93,11 @@ const Navbar = () => {
                     fill="none"
                   ></path>
                 </svg>
+              </div >
+              <div className={styles.text_part} style={{textDecoration: 'none',cursor:"pointer"}} >
+              <div >Hello,Login</div>
               </div>
-              <Link to="/OTP" className={styles.text_part} style={{textDecoration: 'none'}}>Hello,Login</Link>
+              
             </div>
             <div>
               <div className={styles.logo_part}>
@@ -172,6 +178,9 @@ const Navbar = () => {
         </div>
          
       </div>
+      </div>
+      <div className={styles.ModalBox}>
+        <ModalBox/>
       </div>
     </div>
   );
