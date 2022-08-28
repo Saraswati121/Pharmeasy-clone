@@ -14,8 +14,10 @@ export const Cart = () => {
       subtotal += cart[i].newPrice;
       discountTotal += cart[i].originalPrice;
     }
-    subtotal = subtotal.toFixed(2);
-    discountTotal = discountTotal.toFixed(2);
+    if (subtotal) {
+      subtotal = subtotal.toFixed(2);
+      discountTotal = discountTotal.toFixed(2);
+    }
   }
 
   return (
@@ -24,7 +26,11 @@ export const Cart = () => {
         <div className={styles.cartWithItems}>
           <div className={styles.singleCartItem}>
             <div>
-              {cart.length===1 ? <h1>1 Item in Cart</h1> : <h1>{cart.length} Items in Cart</h1>}
+              {cart.length === 1 ? (
+                <h1>1 Item in Cart</h1>
+              ) : (
+                <h1>{cart.length} Items in Cart</h1>
+              )}
               <p>Prices are indicative</p>
             </div>
             <div>
