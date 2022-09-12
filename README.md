@@ -1,7 +1,7 @@
 ## Pharmeasy clone
 <hr/>
 
-This is the Construct Week Group Project of PharmEasy clone using HTML CSS and JavaScript.
+This is the Construct Week Group Project of PharmEasy clone
 
 TOPIC STATEMENT
 
