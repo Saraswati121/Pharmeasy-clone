@@ -18,6 +18,7 @@ const settings = {
     slidesToScroll: 1,
 }
 
+//Typo in Carausal -  Carousel
 export default function Carausal() {
 
     const [slider, setSlider] = React.useState()
@@ -26,7 +27,7 @@ export default function Carausal() {
     const side = useBreakpointValue({ base: '30%', md: '10px' });
 
 
-
+    // This is constant data. Put it in constants
     const cardsData = [
         {
             id: 1,
@@ -128,6 +129,8 @@ export default function Carausal() {
                 <MdKeyboardArrowRight color="#0f847e" size={20} />
             </IconButton>
             <Slider {...settings} ref={(slider) => setSlider(slider)} >
+                
+                {/* Make a different funtional component here */}
                 {cardsData.map((elem, index) => (
                     <CarausalCard key={elem.id} elem={elem} />
                 ))}

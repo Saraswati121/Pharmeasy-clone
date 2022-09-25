@@ -5,7 +5,7 @@ import Description from './Description'
 import Menu from './Menu'
 import Security from './Security'
 
-
+// Add classes so that your compenent can become more verbose
 const HealthCare = () => {
     return (
         <Box>

@@ -7,6 +7,7 @@ import Select from "@mui/material/Select";
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../../Redux/Products/action";
 
+// Distribute code in constants and small child components
 const subCategoryFilters = [
   "Covid Test Kits",
   "Disinfectants",

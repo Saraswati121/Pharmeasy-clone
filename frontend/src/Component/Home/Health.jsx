@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 
-
+// fetch from common component
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (

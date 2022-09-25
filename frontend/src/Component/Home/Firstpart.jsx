@@ -7,6 +7,7 @@ const Firstpart = () => {
   return (
     <div>
         <div className={style.container}>
+          {/* Put it in separate component and call it here */}
           {Data.image_data.map((el)=>(
             <div className={style.box} key={el.name}>
                 <div className={style.image_box}>

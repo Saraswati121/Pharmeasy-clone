@@ -20,6 +20,8 @@ import Security from "../healthcare/Security";
 import SimilarProductCarousal from "./SimilarProductCarousal";
 import { addToCart } from "../../Redux/Cart/action";
 
+// Never form compoenents. Separate these into child components and call them on conditions
+// Minimize use of static value for position based properties as they break in different dimensions
 const IndividualProduct = () => {
   const loading = useSelector((store) => store.products.isLoading);
   const error = useSelector((store) => store.products.isError);
@@ -33,6 +35,7 @@ const IndividualProduct = () => {
   );
   useEffect(() => {
     setData(individualProduct);
+    //Remove console
     console.log("data:", data);
     setShowImg(individualProduct?.img1);
   }, []);

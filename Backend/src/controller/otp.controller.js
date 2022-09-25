@@ -5,6 +5,7 @@ const nodemailer= require("nodemailer")
 const { readFileSync} =require("fs")
 const hbs= require("handlebars")
 
+//Keep your secrets in env and read from there . For practice separate them from their main code
 const EMAIL= "riley33@ethereal.email"
 const PASSWORD= "s1msRvR8TCADTGSjPH"
 

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
+//Not used in file remove them
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -80,7 +81,7 @@ const Offer = () => {
         <div className={style.parent_container}>
            
         <Slider {...settings}>
-            
+            {/* Put in different functional component */}
             {Data.offers.map((el)=>(
               <div className={style.carousal_offers} key={el.image}>
                 <img src={el.image} />

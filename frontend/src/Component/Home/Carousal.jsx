@@ -6,7 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-
+// There is already a carousal component in project. Change its name.
+// We can easily make this a common compenent where in props we can pass dimensions and all hardcoded properties . 
+//Customise such that in whole project this can be used a reusable component
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -48,6 +50,7 @@ function PrevArrow(props) {
     />
   );
 }
+
 const Carousal = () => {
     const settings = {
         infinite: true,

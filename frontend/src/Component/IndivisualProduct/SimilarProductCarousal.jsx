@@ -48,6 +48,7 @@ export default function SimilarProductCarousal() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        {/* make a separate functional common components ans call it as per choice to form ICON button */}
         <IconButton
           borderRadius="full"
           position="absolute"
@@ -87,6 +88,7 @@ export default function SimilarProductCarousal() {
           <BiRightArrowAlt color="#0f847e" />
         </IconButton>
         <Slider {...settings} ref={(slider) => setSlider(slider)}>
+          {/* Avoid map and calcaulations . We need to unit test our each components which is not possible if we directly use them in parent compoenents */}
           {covidEssentialsData.map((elem, index) => (
             <SimilarProductCard elem={elem} key={elem.id}/>
           ))}

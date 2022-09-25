@@ -2,6 +2,7 @@ import styles from "./footer.module.css";
 // import { h1 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
+// Simplify your code , use loop to form this component.
 const Footer = () => {
   return (
     <div className={styles.container}>

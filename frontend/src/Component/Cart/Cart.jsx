@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 export const Cart = () => {
   let { cart, subtotal, discountTotal } = useSelector((store) => store.cart);
+  // Put it in a util file. 
   if (cart) {
     for (let i = 0; i < cart.length; i++) {
       subtotal += cart[i].newPrice;
@@ -22,6 +23,7 @@ export const Cart = () => {
 
   return (
     <>
+    {/* break it into HOC */}
       {cart.length > 0 ? (
         <div className={styles.cartWithItems}>
           <div className={styles.singleCartItem}>
@@ -158,7 +160,10 @@ export const Cart = () => {
           height: "1px",
         }}
       ></div>
+
+      {/* Reusable piece of code * div img h2 p*/}
       <div className={styles.cartInfoBox}>
+        
         <div>
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1&q=100"
@@ -173,6 +178,7 @@ export const Cart = () => {
         <div>
           <img
             src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1&q=100"
+            // Always give alt value , is used in scrapping and google ranking of pages
             alt=""
           />
           <h2>Secure Payment</h2>
@@ -190,6 +196,8 @@ export const Cart = () => {
           </p>
         </div>
       </div>
+
+      {/* Fetch all constants from constant file */}
       <div
         style={{
           width: "100%",

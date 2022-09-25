@@ -19,6 +19,7 @@ export const ProductCard = (el) => {
   };
 
   useEffect(() => {
+    // calculate by a calling a common function
     const discountPrice = el.originalPrice - el.newPrice;
     const discountPercent = (discountPrice / el.originalPrice) * 100;
     setDiscount(discountPercent.toFixed(1));

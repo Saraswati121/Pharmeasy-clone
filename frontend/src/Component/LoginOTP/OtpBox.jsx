@@ -39,6 +39,7 @@ const dispatch = useDispatch();
     {/* for otp */}
 
     <div id="ip">
+      {/* Take 4 and 1 from config and formuakte accordingly */}
         {new Array(4).fill(1).map((el ,index)=>(
         <input 
         onChange={e=>{

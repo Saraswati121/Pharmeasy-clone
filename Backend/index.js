@@ -16,15 +16,17 @@ app.use("/category", CategoryController);
 app.use("/products", ProductController);
 app.use("/getotp", OtpController);
 
-
+// Move to otp controller.
 const OTP = require("./src/model/otp.model");
 const nodemailer = require("nodemailer");
 const { readFileSync } = require("fs");
 const hbs = require("handlebars");
 
+// Use from env
 const EMAIL = "jasmin66@ethereal.email";
 const PASSWORD = "d6bdEK2qERQmv2pwzA";
 
+// Make separate client file for this .
 const transport = nodemailer.createTransport({
   host: "smtp.ethereal.email",
   port: 587,
@@ -34,6 +36,7 @@ const transport = nodemailer.createTransport({
   },
 });
 
+// All constants should move to a constant file 
 app.post("/getotp", async (req, res) => {
   const { email } = req.body;
   const sendOtp = Math.floor(1000 + Math.random() * 9000);
