@@ -22,8 +22,8 @@ const nodemailer = require("nodemailer");
 const { readFileSync } = require("fs");
 const hbs = require("handlebars");
 
-const EMAIL = "jasmin66@ethereal.email";
-const PASSWORD = "d6bdEK2qERQmv2pwzA";
+const EMAIL = "	eloisa.satterfield42@ethereal.email";
+const PASSWORD = "MVm7U3w2eAAbgWj3Y5";
 
 const transport = nodemailer.createTransport({
   host: "smtp.ethereal.email",

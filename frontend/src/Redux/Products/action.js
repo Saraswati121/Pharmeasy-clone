@@ -14,7 +14,7 @@ export const productActions = {
 export const getProducts = (dispatch) => {
   dispatch({ type: productActions.GET_PRODUCT_LOADING });
   axios
-    .get("https://pharmaeasy.herokuapp.com//products")
+    .get("https://pharmaeasy.herokuapp.com/products")
     .then((res) => dispatch({ type: productActions.GET_PRODUCT_SUCCESS, payload: res.data }))
     .catch((err) => console.log(err));
 };
