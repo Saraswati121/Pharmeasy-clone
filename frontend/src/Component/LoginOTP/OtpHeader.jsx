@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Fetch from constants
 export const OtpHeader = () => {
   return (
     <div>

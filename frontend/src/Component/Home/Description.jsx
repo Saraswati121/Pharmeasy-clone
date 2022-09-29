@@ -1,5 +1,6 @@
 import styles from "./description.module.css";
 
+// Can be make a single functional component and a loop can be used to form this whole element.
 const Description = () => {
     return (
       <div className={styles.container}>

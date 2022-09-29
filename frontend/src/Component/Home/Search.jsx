@@ -10,6 +10,7 @@ const Search = () => {
         </div>
         <div className={style.searchbar_two}>
           <div className={style.input_first}>
+            {/* Avoid using svg images because these can't customized as per different view */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 34 34"

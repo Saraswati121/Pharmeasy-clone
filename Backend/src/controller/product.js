@@ -3,8 +3,9 @@ const ProductDetails = require("../model/product.model");
 const Category = require("../model/category.model");
 
 const router = express.Router();
-
+// Never give direct response in api repsonse. Make an API contract like {data: [], message: "success"} for better usage on FE.
 router.get("/", async (req, res) => {
+  // Avoid chaining as much as possible
   const data = await ProductDetails.find()
     .populate({ path: "category_id" })
     .lean()

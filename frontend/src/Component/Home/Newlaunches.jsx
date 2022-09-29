@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
+//Fetch from common components
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -83,6 +84,7 @@ const Newlaunches = () => {
         <p className={style.container_text2}>New wellness range just for you!</p>
         <div className={style.sub_container}>
           <Slider {...settings}>
+            {/* Put it in different components */}
             {Data.new_launches.map((el) => (
               <div key={el.title} className={style.image_box}>
                 <div className={style.image}>

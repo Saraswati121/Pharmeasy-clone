@@ -6,6 +6,7 @@ import { OtpBox } from "../LoginOTP/OtpBox";
 import {handleModalClose, showLoginPage} from "../../Redux/Otp/action"
 import { OtpHeader } from "../LoginOTP/OtpHeader";
 
+// Can be common component. For whole project this format of modal
 export const ModalBox = () => {
   const [show, setShow] = React.useState(true);
 

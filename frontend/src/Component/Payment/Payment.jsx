@@ -7,6 +7,7 @@ export const Payment = () => {
   const { cart } = useSelector((store) => store.cart);
   let cartTotal = 0;
   let cutPrice = 0;
+  // Calculated before also use from that util
   if (cart) {
     for (let i = 0; i < cart.length; i++) {
         cartTotal += cart[i].newPrice;

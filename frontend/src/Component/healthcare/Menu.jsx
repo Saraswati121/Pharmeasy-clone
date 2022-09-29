@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { MenuData } from "./MenuData";
 
 
+// Most of the css used are for window based view. We can try and make these elements flexible example
+{/* <Text w="55%" fontSize="16px" fontWeight="500" color="#4f585e" marginTop="6%"></Text> use h3 or something with only change in color*/}
 const Menu = () => {
     return (
         <Flex

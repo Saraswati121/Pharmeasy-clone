@@ -13,9 +13,11 @@ export const SingleCartCard = (el) => {
   const { cart } = useSelector((store) => store.cart);
   const dispatch = useDispatch();
   useEffect(() => {
+    // Use proper naming here like cartTotalPrice , originalPrice 
     let cartTotal = qty * el.newPrice;
     let cartDiscount = qty * el.originalPrice;
     cartPrice(dispatch, cartTotal, cartDiscount);
+    //Can use validations here ( For new negative values , use to show error popups)
     const discountPrice = el.originalPrice - el.newPrice;
     const discountPercent = (discountPrice / el.originalPrice) * 100;
     setDiscount(discountPercent.toFixed(1));
@@ -31,6 +33,7 @@ export const SingleCartCard = (el) => {
     cartPrice(dispatch, cartTotal, cartDiscount);
   };
 
+  // Always try to separate out child components from parent components as much as possible .If they can reusable put in util files and import them
   return (
     <div className={styles.singleCartWrapper}>
       <div className={styles.singleCartImgDiv}>
@@ -50,6 +53,7 @@ export const SingleCartCard = (el) => {
         <p className={styles.companyName}>By {el.company}</p>
         <div className={styles.singleCartQty}>
           <div>
+            {/* Can we made a separate component */}
             <FormControl sx={{ m: 1, minWidth: 90 }} size="small">
               <Select
                 value={qty}
@@ -67,6 +71,7 @@ export const SingleCartCard = (el) => {
           <div>
             <div>
               <p style={{ textDecoration: "line-through" }}>
+                {/* Dont do calculations inside DOM. */}
                 ₹{el.originalPrice.toFixed(2) * qty}*
               </p>
               <p style={{ color: "#f98b8d" }}>{discount}% OFF</p>

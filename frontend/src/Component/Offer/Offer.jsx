@@ -2,6 +2,7 @@ import React from 'react'
 import "./offer.css";
 import Navbar from '../Home/Navbar';
 
+// make a separate fucntional component and form this component. Code should always DRY property
 export const Offer = () => {
   return (
     <>

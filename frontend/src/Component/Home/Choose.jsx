@@ -1,6 +1,7 @@
 import { Heading } from "@chakra-ui/layout";
 import styles from "./choose.module.css";
 
+// Move to constants
 const db = [
   {
     img: "https://assets.pharmeasy.in/web-assets/dist/4d2f7c48.svg",
@@ -31,9 +32,12 @@ const Choose = () => {
         Why Choose Us?
       </Heading>
       <div className={styles.flexBox}>
+
+        {/* Shift it to different functional component */}
         {db.map((el) => {
           return (
             <div key={el.title}>
+              {/* Try to not skip alt property , always keep gaps keeping mobile and web view in mind */}
               <img style={{ marginBottom: "30px" }} src={el.img} alt="" />
               <Heading
                 size="md"
@@ -56,6 +60,7 @@ const Choose = () => {
             </div>
           );
         })}
+        
       </div>
     </div>
   );

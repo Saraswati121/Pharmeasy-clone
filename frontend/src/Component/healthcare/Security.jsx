@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./desc.module.css";
+
+// Break this constants list and use loop to make a functional component and call it inside
 const Security = () => {
     return (
         <div>

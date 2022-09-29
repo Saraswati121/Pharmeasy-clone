@@ -8,7 +8,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 
-
+// As told before use from common component
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (

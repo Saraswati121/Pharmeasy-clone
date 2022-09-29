@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { Heading } from "@chakra-ui/layout";
 
+// Get from a common component and distribute your code in constants.
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (
