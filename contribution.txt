@@ -1,0 +1,19 @@
+Saraswati Panda
+1. All Backend(authentication using jwt, CRUD, relation between collection, sending mail)
+2.fronted- otp page(using modal) with functionalities, checkout page, offer page
+
+
+Pankaj Kumar
+1.Healthcare page
+2.Single page
+3.complete redux
+4.created dummydata for product
+
+
+Susmita Mandal 
+1.Entire Homepage
+
+
+Sumit Beniwal
+1.Product page
+2.Cart page
