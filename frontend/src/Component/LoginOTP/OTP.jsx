@@ -7,7 +7,7 @@ import { showOtpPage } from '../../Redux/Otp/action';
 
 // const url= "https://pharmaeasy.herokuapp.com"
 // Fetch from env  to form urls
-const url= "http://localhost:8080"
+const url = "https://pharmeasy-backend-server.up.railway.app";
   export const OTP = () => {
  
   const [email,setEmail]=useState("")
