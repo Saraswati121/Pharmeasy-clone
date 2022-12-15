@@ -1,11 +1,7 @@
 ## Pharmeasy clone
 <hr/>
 
-This is the Construct Week Group Project of PharmEasy clone
-
-TOPIC STATEMENT
-
-The working clone of "Take it easy, Pharmeasy", which delivers medicines and other healthcare items, now available via prescriptions. To build this clone we have used React, Redux, Express, MongoDB, Chakra. Alongside doing this project, we learnt a lot of new things about team work, proper coordination and thinking along with all the team members.😊
+This is the Construct Week Group Project of PharmEasy clone. The working clone of "PharmEasy", which delivers medicines and other healthcare items, now available via prescriptions. To build this clone we have used React, Redux, Express, MongoDB, Chakra. Alongside doing this project, we learnt a lot of new things about team work, proper coordination and thinking along with all the team members.😊
 
 <h2>Contriubuters:</h2><hr/>
 <h3><a href="https://github.com/Pankaj1947">Pankaj Kumar Ram</a></h3>
