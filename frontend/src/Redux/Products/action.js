@@ -14,7 +14,7 @@ export const productActions = {
 export const getProducts = (dispatch) => {
   dispatch({ type: productActions.GET_PRODUCT_LOADING });
   axios
-    .get("https://pharmeasy-backend-server.up.railway.app/products")
+    .get("https://pharmaeasy-backend.onrender.com/products")
     .then((res) =>
       dispatch({ type: productActions.GET_PRODUCT_SUCCESS, payload: res.data })
     )

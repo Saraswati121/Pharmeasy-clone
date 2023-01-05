@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { handleModalClose } from '../../Redux/Otp/action';
 
 // const url= "https://pharmaeasy.herokuapp.com"
-const url= "https://pharmeasy-backend-server.up.railway.app"
+const url = "https://pharmaeasy-backend.onrender.com/";
 export const OtpBox = () => {
 
 const inputRef=useRef([])
