@@ -1,20 +1,88 @@
-## Pharmeasy clone
-<hr/>
+## PharmEasy Clone
 
 This is the Construct Week Group Project of PharmEasy clone. The working clone of "PharmEasy", which delivers medicines and other healthcare items, now available via prescriptions. To build this clone we have used React, Redux, Express, MongoDB, Chakra. Alongside doing this project, we learnt a lot of new things about team work, proper coordination and thinking along with all the team members.😊
 
-<h2>Contriubuters:</h2><hr/>
-<h3><a href="https://github.com/Pankaj1947">Pankaj Kumar Ram</a></h3>
-<h3><a href="https://github.com/Saraswati121">Saraswati Panda</a></h3>
-<h3><a href="https://github.com/Susmita549">Susmita Mandal</a></h3>
-<h3><a href="https://github.com/SumitB1412">Sumit Beniwal</a></h3>
 
-DEPLOYED LINK
+## Contributors ✨
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Pankaj1947">
+            <img src="https://avatars.githubusercontent.com/u/96759314?v=4" width="100px;" alt="Pankaj1947"/>
+            <br />
+            <sub><b>Pankaj Kumar Ram</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/Pankaj1947" title="GitHub">
+	   <img src='https://ico.now.sh/github/fff' alt='github' height='15'>
+	</a>
+	<a href="mailto:pankajkr885@gmail.com" title="Gmail">
+	   <img src='https://ico.now.sh/gmail/fff' alt='gmail' height='15'>
+	</a>
+	<a href="https://www.linkedin.com/in/pankaj-kumar-ram-639437190/" title="LinkedIn">
+	   <img src='https://ico.now.sh/linkedin/fff' alt='linkedin' height='15'>
+	</a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Susmita549">
+            <img src="https://avatars.githubusercontent.com/u/99960489?v=4" width="100px;" alt="Aknathpanchal"/>
+            <br />
+            <sub><b>Susmita Mandal</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/Susmita549" title="GitHub">
+	   <img src='https://ico.now.sh/github/fff' alt='github' height='15'>
+	</a>
+	<a href="mailto:jsusmita549@gmail.com" title="Gmail">
+	   <img src='https://ico.now.sh/gmail/fff' alt='gmail' height='15'>
+	</a>
+	<a href="https://linkedin.com/in/susmitamandal549" title="LinkedIn">
+	   <img src='https://ico.now.sh/linkedin/fff' alt='linkedin' height='15'>
+	</a>
+    </td>    
+    <td align="center">
+        <a href="https://github.com/SumitB1412">
+            <img src="https://avatars.githubusercontent.com/u/99647169?v=4" width="100px;" alt="pratikganjale55"/>
+            <br />
+            <sub><b>Sumit Beniwal</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/SumitB1412" title="Github">
+	   <img src='https://ico.now.sh/github/fff' alt='github' height='15'>
+	</a>
+	<a href="mailto:beniwalsumit1412@gmail.com" title="Gmail">
+	   <img src='https://ico.now.sh/gmail/fff' alt='gmail' height='15'>
+	</a>
+	<a href="https://www.linkedin.com/in/beniwalsumit/" title="LinkedIn">
+	   <img src='https://ico.now.sh/linkedin/fff' alt='linkedin' height='15'>
+	</a>
+    </td>    
+    <td align="center">
+        <a href="https://github.com/Saraswati121">
+            <img src="https://avatars.githubusercontent.com/u/99686266?v=4" width="100px;" alt="Saraswati121"/>
+            <br />
+            <sub><b>Saraswati Panda</b></sub>
+        </a>
+        <br />
+        <a href="https://github.com/Saraswati121" title="Github">
+	   <img src='https://ico.now.sh/github/fff' alt='github' height='15'>
+	</a>
+	<a href="mailto:gouravmisra6@gmail.com" title="Gmail">
+	   <img src='https://ico.now.sh/gmail/fff' alt='gmail' height='15'>
+	</a>
+	<a href="https://www.linkedin.com/in/saraswati-panda/" title="LinkedIn">
+	   <img src='https://ico.now.sh/linkedin/fff' alt='linkedin' height='15'>
+	</a>
+    </td>    
+  </tr>
+  </table>
+
+
+## DEPLOYED LINK
+
 https://pharmeasy-clone-nem201.netlify.app/
-<hr/>
 
-<h3>FUNCTIONALITIES IMPLEMENTED</h3>
-<hr/>
+## FUNCTIONALITIES IMPLEMENTED
 
 1. Login via OTP verification
 2. Login verification from backend using nodemailer
@@ -30,9 +98,8 @@ https://pharmeasy-clone-nem201.netlify.app/
 12. Available Payment Modes Shown in the Payment
 
 Take it Easy and GO TO OUR PHARMEASY !!
-<hr/>
 
-<h1>Glimpse of the deployed project</h1>
+## Glimpse of the deployed project
 
 <h3>Home Page</h3>
 <img src="https://github.com/Saraswati121/imported-existence-8823/blob/main/frontend/public/Home%20Page.png?raw=true" alt="homePage"/>
